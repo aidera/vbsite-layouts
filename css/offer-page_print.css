@@ -1,0 +1,146 @@
+@media print {
+  body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+  header,
+  section#preloading,
+  section#recomended,
+  section#last-action,
+  footer,
+  #bx-panel {
+    display: none !important;
+  }
+  section#offer {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+  }
+  section#offer div.admin-edit {
+    display: none !important;
+  }
+  section#offer div.sidebar#sidebar {
+    display: none !important;
+  }
+  section#offer div.offer-container {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    max-width: 500px;
+    margin: 0 auto !important;
+  }
+  section#offer div.offer-container div.content#content {
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+  section#offer div.offer-container div.content#content div.content-header {
+    padding: 0;
+    padding-top: 20px;
+  }
+  section#offer div.offer-container div.content#content div.content-header div.status p {
+    padding: 10px;
+    color: #000;
+    background: none;
+    border: 1px solid #000;
+  }
+  section#offer div.offer-container div.content#content div.content-header div.recommended {
+    padding: 0;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  section#offer div.offer-container div.content#content div.content-header div.recommended img {
+    display: none;
+  }
+  section#offer div.offer-container div.content#content div.content-header div.recommended div.border {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: none;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+  section#offer div.offer-container div.content#content div.content-header div.recommended p {
+    padding: 10px;
+    left: 0;
+    top: 0;
+    margin: 0;
+    margin-top: 5px;
+    position: relative;
+    padding: 10px;
+    color: #000;
+    background: none;
+    border: 1px solid #000;
+  }
+  section#offer div.offer-container div.content#content div.text-block {
+    padding: 20px 0;
+    padding-bottom: 40px;
+  }
+  section#offer div.offer-container div.content#content div.labels h2 {
+    text-align: center;
+    display: block;
+  }
+  section#offer div.offer-container div.content#content div.gallery-container {
+    display: none;
+  }
+  section#offer div.offer-container div.content#content div.gallery-container_for-print {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  section#offer div.offer-container div.content#content div.gallery-container_for-print img {
+    max-width: 100%;
+    max-height: 400px;
+  }
+  section#offer div.offer-container div.content#content div.buttons {
+    display: none;
+  }
+  section#offer div.footer-block {
+    display: none !important;
+  }
+  section#offer div.footer-block_for-print {
+    padding-top: 20px;
+    border-top: 1px solid #d3d3d3;
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    display: block !important;
+  }
+  section#offer div.footer-block_for-print div.logo-container_for-print {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    display: block !important;
+    padding-top: 50px;
+  }
+  section#offer div.footer-block_for-print div.logo-container_for-print img {
+    height: 150px;
+  }
+  section#offer div.footer-block_for-print div.text-container_for-print {
+    display: block !important;
+    text-align: center;
+  }
+  section#offer div.footer-block_for-print div.text-container_for-print p {
+    font-family: CalibriLight;
+    font-size: 14px;
+    color: #000;
+  }
+  section#offer div.footer-block_for-print div.text-container_for-print p.phone {
+    font-size: 20px;
+  }
+  section#offer div.footer-block_for-print div.text-container_for-print p.email {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}

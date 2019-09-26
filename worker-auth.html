@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="" content="">
+    <meta name="keywords" content="Авторизация">
+    <meta name="description" content="Авторизация">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Авторизация">
+    <meta property="og:title" content="Авторизация">
+    <meta property="og:description" content="Авторизация">
+    <meta property="og:url" content="|!TODO: вставить текущий адрес страницы!|">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="|!TODO: вставить путь к картинке ./img/og-img.png !|">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <title>Авторизация</title>
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/popup-form.css" rel="stylesheet" type="text/css">
+    <link href="./css/menu-simple.css" rel="stylesheet" type="text/css">
+    <link href="./css/menu-large.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/worker-auth.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <script src="./libs/jquery/dist/jquery.mask.min.js" type="text/javascript"></script>
+    <script src="./libs/form-gb/form-gb.js" type="text/javascript"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="menu-simple-desktop">
+        <div class="logo"><a href="./index.html"><img src="./img/logo-color.svg" alt="Логотип ВБИЗНЕСЕ"></a></div>
+        <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <div><a href="./index.html" itemprop="url"><img class="main" src="./img/icons/home.svg" alt="Главная">
+              <p>Главная</p></a></div>
+          <div><a href="./catalog.html" itemprop="url"><img class="main" src="./img/icons/bag.svg" alt="Каталог">
+              <p>Каталог</p><img class="arrow" src="./img/icons/arrow-right.svg" alt="Выпадающее меню"></a>
+            <div class="levels">
+              <div class="level-one">
+                <div><a href="./catalog.html" itemprop="url">
+                    <p>--Все категории--</p></a></div>
+                <div><a href="./catalog.html" itemprop="url">
+                    <p>Гостиничный бизнес</p>
+                    <div class="arrow"></div></a>
+                  <div class="level-two">
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>--Все типы--</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Отели</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Хостелы</p></a></div>
+                  </div>
+                </div>
+                <div><a href="./catalog.html" itemprop="url"> 
+                    <p>Индустрия красоты</p>
+                    <div class="arrow"></div></a>
+                  <div class="level-two">
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>--Все типы--</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Салоны красоты</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Студии маникюра</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Медицинские центры</p></a></div>
+                  </div>
+                </div>
+                <div><a href="./catalog.html" itemprop="url">
+                    <p>Общественное питание</p>
+                    <div class="arrow"></div>
+                    <div class="level-two">
+                      <div><a href="./catalog.html" itemprop="url">
+                          <p>--Все типы--</p></a></div>
+                      <div><a href="./catalog.html" itemprop="url">
+                          <p>Кафе</p></a></div>
+                      <div><a href="./catalog.html" itemprop="url">
+                          <p>Кофейни</p></a></div>
+                      <div><a href="./catalog.html" itemprop="url">
+                          <p>Пивные магазины</p></a></div>
+                    </div></a></div>
+                <div><a href="./catalog.html" itemprop="url">
+                    <p>Гостиничный бизнес</p>
+                    <div class="arrow"></div></a>
+                  <div class="level-two">
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>--Все типы--</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Отели</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Хостелы</p></a></div>
+                  </div>
+                </div>
+                <div><a href="./catalog.html" itemprop="url"> 
+                    <p>Индустрия красоты</p>
+                    <div class="arrow"></div></a>
+                  <div class="level-two">
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>--Все типы--</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Салоны красоты</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Студии маникюра</p></a></div>
+                    <div><a href="./catalog.html" itemprop="url">
+                        <p>Медицинские центры</p></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div><a href="./services.html" itemprop="url"><img class="main" src="./img/icons/gift.svg" alt="Услуги">
+              <p>Услуги</p><img class="arrow" src="./img/icons/arrow-right.svg" alt="Выпадающее меню"></a>
+            <div class="levels">
+              <div class="level-one">
+                <div><a href="./services_buy-business.html" itemprop="url">
+                    <p>Купить бизнес</p></a></div>
+                <div><a href="./services_sell-business.html" itemprop="url">
+                    <p>Продать бизнес</p></a></div>
+              </div>
+            </div>
+          </div>
+          <div><a href="./articles.html" itemprop="url"><img class="main" src="./img/icons/book.svg" alt="Статьи">
+              <p>Статьи</p></a></div>
+          <div><a href="./about.html" itemprop="url"><img class="main" src="./img/icons/user.svg" alt="О нас">
+              <p>Контакты</p></a></div>
+          <div><a class="submit-your-application_open"><img class="main" src="./img/icons/hand-point-right.svg" alt="Оставить заявку">
+              <p>Оставить заявку</p></a></div>
+        </nav>
+        <div class="bottom-part"><a class="phone" href="tel:88125021199">8 (812) 502-11-99</a>
+          <p class="adress">г.Санкт-Петербург, <br> наб. Обводного канала 93А</p>
+          <div class="socials"><a href="vk.com"><img src="./img/icons/social-vk.svg" alt=""></a><a href="facebook.com"><img src="./img/icons/social-fb.svg" alt=""></a><a href="instagram.com"><img src="./img/icons/social-insta.svg" alt=""></a></div>
+        </div>
+      </div>
+      <div id="menu-simple-mobile">
+        <div class="menu-simple-mobile_overlay"></div>
+        <div class="top-line"><a class="button menu-simple-mobile_show-menu-block"><img src="img/icons/menu.svg" alt=""></a><a class="logo" href="/index.html">
+            <p>ВБИЗНЕСЕ</p></a></div>
+        <div class="menu-block">
+          <div class="logo"><a href="/index.html">
+              <p>ВБИЗНЕСЕ</p></a></div>
+          <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div><a href="./index.html" itemprop="url"><img class="main" src="./img/icons/home.svg" alt="Главная">
+                <p>Главная</p></a></div>
+            <div><a href="./catalog.html" itemprop="url"><img class="main" src="./img/icons/bag.svg" alt="Каталог">
+                <p>Каталог</p></a></div>
+            <div><a href="./services.html" itemprop="url"><img class="main" src="./img/icons/gift.svg" alt="Услуги">
+                <p>Услуги</p></a></div>
+            <div><a href="./articles.html" itemprop="url"><img class="main" src="./img/icons/book.svg" alt="Статьи">
+                <p>Статьи</p></a></div>
+            <div><a href="./about.html" itemprop="url"><img class="main" src="./img/icons/user.svg" alt="О нас">
+                <p>О нас</p></a></div>
+            <div><a class="submit-your-application_open"><img class="main" src="./img/icons/hand-point-right.svg" alt="Оставить заявку">
+                <p>Оставить заявку</p></a></div>
+          </nav>
+          <div class="bottom-part"><a class="phone" href="tel:88125021199">8 (812) 502-11-99</a>
+            <p class="adress">г.Санкт-Петербург, <br> ул.Вбизнеса 123</p>
+            <div class="socials"><a href="vk.com"><img src="./img/icons/social-vk.svg" alt=""></a><a href="facebook.com"><img src="./img/icons/social-fb.svg" alt=""></a><a href="instagram.com"><img src="./img/icons/social-insta.svg" alt=""></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="preloading">
+      <div class="logo"><img src="./img/logo-color.svg" alt="Загрузка ВБИЗНЕСЕ"></div><img class="loader" src="./img/icons/loading-line-green.svg" alt="Загрузка ВБИЗНЕСЕ">
+    </section>
+    <div id="submit-your-application">
+      <div class="submit-your-application_overlay submit-your-application_close"></div>
+      <form form-gb-page="|!TODO: адрес текущей страницы!|" form-gb-desc="popup-form">
+        <div class="close_div"><img class="close submit-your-application_close" src="./img/icons/close.svg" alt="Закрыть"></div>
+        <div class="header">
+          <p>Оставить заявку</p>
+        </div>
+        <div class="errors form-gb_errors"></div>
+        <input class="form-gb_input-name" type="text" placeholder="Как к Вам обращаться?*">
+        <input class="form-gb_input-phone" type="text" placeholder="Ваш телефонный номер*">
+        <textarea class="form-gb_input-comment" type="text" placeholder="Что Вас интересует?"></textarea>
+        <div class="checkbox">
+          <input class="form-gb-checkbox" id="menu_form-gb-checkbox" type="checkbox" name="form-gb-checkbox" checked>
+          <label for="menu_form-gb-checkbox">Я даю согласие на обработку персональных данных по условиям <a href="./terms-of-use.html">пользовательского соглашения</a></label>
+        </div>
+        <div class="form-button_div"><a class="form-button form-gb_button">Отправить</a></div>
+        <div class="loading form-gb_loading"><img src="./img/icons/loading-green.svg" alt="Загрузка"></div>
+      </form>
+    </div>
+    <section id="authorization">
+      <div class="page-container">
+        <div class="bx-auth auth-container">
+          <div class="undertitle">Личный кабинет брокера</div>
+          <div class="bx-auth-title">Авторизация</div>
+          <div class="bx-auth-note">Пожалуйста, авторизуйтесь.</div>
+          <form name="form_auth" method="post" target="_top" action="/kabinet/?login=yes">
+            <input type="hidden" name="AUTH_FORM" value="Y">
+            <input type="hidden" name="TYPE" value="AUTH">
+            <input type="hidden" name="backurl" value="/kabinet/">
+            <div class="bx-auth-table">
+              <input class="bx-auth-input" type="text" placeholder="Логин" name="USER_LOGIN" maxlength="255" value="trbrmrdr@gmail.com">
+              <input class="bx-auth-input" type="password" placeholder="Пароль" name="USER_PASSWORD" maxlength="255" autocomplete="off">
+              <div class="remember">
+                <input type="checkbox" id="USER_REMEMBER" name="USER_REMEMBER" value="Y">
+                <label for="USER_REMEMBER">&nbsp;Запомнить меня на этом компьютере</label>
+              </div>
+              <div class="authorize-submit-cell">
+                <input type="submit" name="Login" value="Войти">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+      <ul class="columns" itemscope itemtype="http://schema.org/Organization">
+        <li class="simple" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <div><a href="./worker-auth.html" itemprop="url" rel="nofollow">Кабинет брокера</a><a href="./sitemap.html" itemprop="url">Карта сайта</a><a href="./terms-of-use.html" itemprop="url">Пользовательское соглашение</a></div>
+        </li>
+        <li class="information">
+          <div class="social"><a href="https://vk.com/vbiznese" target="_blank" itemprop="sameAs"> <img src="img/icons/social-vk.svg" alt="vbiznese во Вконтакте"></a><a href="https://www.facebook.com/goodwillbro/" target="_blank" itemprop="sameAs"> <img src="img/icons/social-fb.svg" alt="vbiznese в Facebook"></a><a href="https://www.instagram.com/vbiznese.ru/" target="_blank" itemprop="sameAs"><img src="img/icons/social-insta.svg" alt="vbiznese в Instagram"></a></div>
+          <meta itemprop="telephone" content="8(812)502-11-99">
+          <address itemscope itemtype="http://schema.org/PostalAddress"><a class="phone" itemprop="telephone" href="tel:88125021199">8 (812) 502-11-99</a><br>
+            <p class="together" itemprop="address">г.Санкт-Петербург,<br>наб.Обводного канала 93А</p>
+            <p> <span itemprop="name">vbiznese.ru </span><span itemprop="copyrightYear">- 2019. </span>Все права защищены.</p>
+          </address>
+        </li>
+        <div class="last">
+          <p>
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+          </p>
+        </div>
+      </ul>
+    </footer>
+  </body>
+</html>

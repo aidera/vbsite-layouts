@@ -1,0 +1,572 @@
+div#menu-admin-desktop {
+  width: 220px;
+  height: 100%;
+  min-height: 650px;
+  position: fixed;
+  left: -220px;
+  top: 0;
+  background-color: #1c1e2a;
+  -webkit-box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+  z-index: 10;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 850px) {
+  div#menu-admin-desktop {
+    display: none;
+  }
+}
+div#menu-admin-desktop div.logo {
+  position: relative;
+  width: 100%;
+  max-height: 30%;
+  padding-top: 50px;
+}
+@media (min-width: 1800px) {
+  div#menu-admin-desktop div.logo {
+    padding-top: 65px;
+  }
+}
+@media (min-width: 2200px) {
+  div#menu-admin-desktop div.logo {
+    padding-top: 80px;
+  }
+}
+div#menu-admin-desktop div.logo a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+div#menu-admin-desktop div.logo a img {
+  width: 70%;
+}
+div#menu-admin-desktop span.header {
+  font-family: Trajan;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 100%;
+}
+div#menu-admin-desktop nav {
+  width: 100%;
+  position: relative;
+}
+div#menu-admin-desktop nav >div {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+div#menu-admin-desktop nav >div:hover div.levels div.level-one {
+  display: block;
+}
+div#menu-admin-desktop nav >div >a {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: left;
+  padding-left: 40px;
+  vertical-align: top;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  opacity: 1;
+  cursor: pointer;
+}
+@media (min-width: 1800px) {
+  div#menu-admin-desktop nav >div >a {
+    padding-bottom: 25px;
+  }
+}
+@media (min-width: 2200px) {
+  div#menu-admin-desktop nav >div >a {
+    padding-bottom: 30px;
+  }
+}
+div#menu-admin-desktop nav >div >a >img.main {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+  margin-top: -3px;
+}
+div#menu-admin-desktop nav >div >a >p {
+  font-family: Trajan;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 14px;
+  width: 100px;
+  padding-left: 0px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+div#menu-admin-desktop nav >div >a img.arrow {
+  width: 10px;
+  right: 20px;
+  position: absolute;
+  top: 9px;
+}
+div#menu-admin-desktop nav >div:hover a {
+  opacity: 0.6;
+}
+div#menu-admin-desktop nav >div:hover a p {
+  padding-left: 5px;
+}
+div#menu-admin-desktop nav >div div.levels {
+  position: absolute;
+  top: -10px;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one {
+  position: absolute;
+  width: 200px;
+  left: 220px;
+  background-color: #1c1e2a;
+  display: block;
+  display: none;
+  -webkit-box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+          box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+}
+div#menu-admin-desktop nav >div div.levels div.level-one >div {
+  position: relative;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one >div:hover a {
+  opacity: 1;
+  background-color: #191b25;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one >div:hover div.level-two {
+  display: block;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one >div >a {
+  display: block;
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #1c1e2a;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one >div >a p {
+  text-align: left;
+  font-family: CalibriLight;
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one >div >a div.arrow {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 96% center;
+  -webkit-background-size: 10px 10px;
+          background-size: 10px;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one div.level-two {
+  position: absolute;
+  width: 200px;
+  left: 200px;
+  top: 0;
+  background-color: #1c1e2a;
+  display: none;
+  -webkit-box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+          box-shadow: 0px 5px 8px rgba(0,0,0,0.5);
+}
+div#menu-admin-desktop nav >div div.levels div.level-one div.level-two div:hover a {
+  opacity: 1;
+  background-color: #191b25;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one div.level-two div a {
+  display: block;
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #1c1e2a;
+}
+div#menu-admin-desktop nav >div div.levels div.level-one div.level-two div a p {
+  text-align: left;
+  font-family: CalibriLight;
+  color: #fff;
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+div#menu-admin-desktop div.bottom-part {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: left;
+}
+@media (min-width: 1800px) {
+  div#menu-admin-desktop div.bottom-part {
+    bottom: 60px;
+  }
+}
+@media (min-width: 2200px) {
+  div#menu-admin-desktop div.bottom-part {
+    bottom: 70px;
+  }
+}
+div#menu-admin-desktop div.bottom-part a {
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  opacity: 1;
+  cursor: pointer;
+  margin-left: 35px;
+  display: block;
+}
+div#menu-admin-desktop div.bottom-part a img {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  opacity: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+div#menu-admin-desktop div.bottom-part a p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+  padding-left: 5px;
+  display: inline;
+}
+div#menu-admin-desktop div.bottom-part a:hover p {
+  padding-left: 0px;
+  opacity: 0.6;
+}
+div#menu-admin-desktop div.bottom-part a:hover img {
+  opacity: 0.6;
+}
+div#menu-admin-mobile {
+  position: relative;
+  display: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 850px) {
+  div#menu-admin-mobile {
+    display: block;
+  }
+}
+div#menu-admin-mobile div.menu-admin-mobile_overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 4;
+  display: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+div#menu-admin-mobile div.top-line {
+  height: 50px;
+  -webkit-box-shadow: 0px 20px 60px rgba(0,0,0,0.5);
+          box-shadow: 0px 20px 60px rgba(0,0,0,0.5);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: #1c1e2a;
+}
+div#menu-admin-mobile div.top-line a.button {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+div#menu-admin-mobile div.top-line a.button img {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+div#menu-admin-mobile div.top-line a.logo {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  cursor: pointer;
+}
+div#menu-admin-mobile div.top-line a.logo p {
+  color: #fff;
+  font-family: Trajan;
+  display: block;
+  margin-right: 30px;
+}
+div#menu-admin-mobile div.top-line a.logo p::first-letter {
+  color: #ffca6a;
+}
+div#menu-admin-mobile div.menu-block {
+  width: 220px;
+  height: 100%;
+  min-height: 500px;
+  position: fixed;
+  z-index: 6;
+  left: -220px;
+  top: 0;
+  background-color: #1c1e2a;
+  -webkit-box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 60px rgba(0,0,0,0.5);
+}
+div#menu-admin-mobile div.menu-block div.logo {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+div#menu-admin-mobile div.menu-block div.logo a {
+  display: block;
+  text-align: center;
+  margin-top: -200px;
+  cursor: pointer;
+}
+div#menu-admin-mobile div.menu-block div.logo a p {
+  color: #fff;
+  font-family: Trajan;
+  display: block;
+}
+div#menu-admin-mobile div.menu-block div.logo a p::first-letter {
+  color: #ffca6a;
+}
+div#menu-admin-mobile div.menu-block span.header {
+  font-family: Trajan;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  width: 100%;
+}
+div#menu-admin-mobile div.menu-block nav {
+  width: 100%;
+  position: relative;
+}
+div#menu-admin-mobile div.menu-block nav >div {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+div#menu-admin-mobile div.menu-block nav >div:hover div.levels div.level-one {
+  display: block;
+}
+div#menu-admin-mobile div.menu-block nav >div >a {
+  width: 100%;
+  display: block;
+  position: relative;
+  text-align: left;
+  padding-left: 40px;
+  vertical-align: top;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  cursor: pointer;
+  opacity: 1;
+}
+div#menu-admin-mobile div.menu-block nav >div >a >img.main {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+  margin-top: -3px;
+}
+div#menu-admin-mobile div.menu-block nav >div >a >p {
+  font-family: Trajan;
+  color: #fff;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 14px;
+  width: 100px;
+  padding-left: 0px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+div#menu-admin-mobile div.menu-block nav >div:hover a {
+  opacity: 0.6;
+}
+div#menu-admin-mobile div.menu-block nav >div:hover a p {
+  padding-left: 5px;
+}
+div#menu-admin-mobile div.menu-block div.bottom-part {
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: left;
+}
+div#menu-admin-mobile div.menu-block div.bottom-part a {
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  opacity: 1;
+  cursor: pointer;
+  margin-left: 35px;
+  display: block;
+  padding: 15px 0;
+}
+div#menu-admin-mobile div.menu-block div.bottom-part a img {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  opacity: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+div#menu-admin-mobile div.menu-block div.bottom-part a p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  opacity: 1;
+  padding-left: 5px;
+  display: inline;
+}
+section#preloading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1e2a;
+  z-index: 1000;
+  display: block;
+  opacity: 1;
+  text-align: center;
+}
+section#preloading div.logo {
+  position: fixed;
+  height: 250px;
+  display: inline-block;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  margin-top: -130px;
+}
+section#preloading div.logo img {
+  height: 100%;
+  width: 100%;
+  max-height: 190px;
+  max-width: 190px;
+  display: inline-block;
+  -webkit-animation: pulse 5s infinite ease-in-out, fade-in 1s;
+          animation: pulse 5s infinite ease-in-out, fade-in 1s;
+}
+section#preloading img.loader {
+  width: 100px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: 50px;
+  position: fixed;
+}
+section#preloading p {
+  font-family: Trajan;
+  font-size: 18px;
+  color: #fff;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  margin-top: 90px;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

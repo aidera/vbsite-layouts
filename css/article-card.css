@@ -1,0 +1,169 @@
+div.article-card {
+  display: inline-block;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+div.article-card:nth-child(2n) {
+  margin-left: 15px;
+}
+@media (max-width: 1500px) {
+  div.article-card:nth-child(2n) {
+    margin-left: 0;
+    display: block;
+  }
+}
+div.article-card a {
+  display: block;
+  width: 590px;
+  height: 235px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 1500px) {
+  div.article-card a {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  div.article-card a {
+    height: 500px;
+  }
+}
+div.article-card a div.img-block {
+  width: 35%;
+  float: left;
+  height: 235px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  div.article-card a div.img-block {
+    width: 100%;
+  }
+}
+div.article-card a div.img-block div.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+div.article-card a div.img-block div.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #1c1e2a), color-stop(90%, #00662e));
+  background: -webkit-linear-gradient(bottom, #1c1e2a 10%, #00662e 90%);
+  background: -o-linear-gradient(bottom, #1c1e2a 10%, #00662e 90%);
+  background: linear-gradient(to top, #1c1e2a 10%, #00662e 90%);
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+}
+div.article-card a div.text-block {
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 63%;
+  height: 225px;
+}
+@media (max-width: 600px) {
+  div.article-card a div.text-block {
+    width: 100%;
+  }
+}
+div.article-card a div.text-block span.title {
+  max-height: 120px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-family: CalibriBold;
+  font-size: 20px;
+  display: block;
+  text-align: left;
+  max-height: 120px;
+}
+div.article-card a div.text-block div.date p {
+  font-family: Calibri;
+  font-size: 16px;
+  font-style: normal;
+  color: #00662e;
+  text-align: left;
+}
+div.article-card a div.text-block div.description {
+  text-align: left;
+  margin-top: 25px;
+  width: 100%;
+  position: relative;
+}
+div.article-card a div.text-block div.description p {
+  display: inline-block;
+  font-family: Calibri;
+  font-size: 16px;
+  line-height: 20px;
+}
+div.article-card a div.text-block span.text-overlay {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), color-stop(80%, #fff));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 80%);
+  background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 80%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 80%);
+}
+div.article-card a span.button {
+  background-color: #00662e;
+  color: #fff;
+  position: absolute;
+  width: 180px;
+  display: block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -90px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+}
+@media (min-width: 800px) {
+  div.article-card:hover {
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  }
+  div.article-card:hover div.img-block div.img {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  div.article-card:hover div.img-block div.overlay {
+    opacity: 0.3;
+  }
+  div.article-card:hover span.button {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,1043 @@
+.sticky-sidebar {
+  position: fixed;
+  z-index: 2;
+}
+.stop-sidebar {
+  position: relative;
+  z-index: 2;
+}
+section#offer {
+  padding-top: 70px;
+}
+@media (max-width: 850px) {
+  section#offer {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 850px) {
+  section#offer div.page-container {
+    width: 100%;
+  }
+}
+section#offer div.offer-container {
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  background-color: #fff;
+  margin: 0 auto;
+}
+section#offer div.offer-container div.admin-edit {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  width: 200px;
+  z-index: 2;
+}
+@media (max-width: 850px) {
+  section#offer div.offer-container div.admin-edit {
+    right: 10px;
+    top: 30px;
+  }
+}
+section#offer div.offer-container div.admin-edit >a {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+}
+@media (max-width: 850px) {
+  section#offer div.offer-container div.admin-edit >a {
+    background-color: rgba(28,30,42,0.4);
+  }
+}
+section#offer div.offer-container div.admin-edit >a img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+section#offer div.offer-container div.admin-edit >a p {
+  color: #fff;
+  font-family: CalibriLight;
+  display: inline-block;
+  vertical-align: middle;
+}
+section#offer div.offer-container div.main-block div#sidebar {
+  top: 0;
+  width: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  float: right;
+  padding: 30px 40px;
+  text-align: center;
+  display: block;
+}
+@media (max-width: 1200px) {
+  section#offer div.offer-container div.main-block div#sidebar {
+    display: none;
+  }
+}
+section#offer div.offer-container div.main-block div#sidebar div.breadcrumbs {
+  text-align: left;
+}
+section#offer div.offer-container div.main-block div#sidebar div.breadcrumbs * {
+  display: inline-block;
+  color: #808080;
+  font-family: Calibri;
+  font-size: 12px;
+}
+section#offer div.offer-container div.main-block div#sidebar div.breadcrumbs div {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+section#offer div.offer-container div.main-block div#sidebar div.breadcrumbs a {
+  cursor: pointer !important;
+  border-bottom: 1px solid #808080;
+}
+section#offer div.offer-container div.main-block div#sidebar div.breadcrumbs a:hover {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-id {
+  text-align: left;
+  margin-top: 20px;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-id * {
+  font-family: CalibriLight;
+  font-size: 14px;
+  display: inline-block;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-id i {
+  font-style: normal;
+}
+section#offer div.offer-container div.main-block div#sidebar div.status {
+  text-align: left;
+  margin-top: 10px;
+  z-index: -1;
+}
+section#offer div.offer-container div.main-block div#sidebar div.status p {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1c1e2a;
+  color: #fff;
+  font-family: CalibriLight;
+  font-size: 16px;
+}
+section#offer div.offer-container div.main-block div#sidebar div.recommended {
+  width: 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  height: 100px;
+}
+section#offer div.offer-container div.main-block div#sidebar div.recommended img {
+  position: absolute;
+  width: 100%;
+  max-height: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  z-index: 1.4;
+}
+section#offer div.offer-container div.main-block div#sidebar div.recommended div.border {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  margin-left: -76px;
+  width: 152px;
+  height: 44px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+          box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  background: -webkit-gradient(linear, left top, right top, from(#e9c070), to(#bd9c71));
+  background: -webkit-linear-gradient(left, #e9c070, #bd9c71);
+  background: -o-linear-gradient(left, #e9c070, #bd9c71);
+  background: linear-gradient(to right, #e9c070, #bd9c71);
+}
+section#offer div.offer-container div.main-block div#sidebar div.recommended p {
+  display: inline-block;
+  padding: 10px 0;
+  width: 144px;
+  top: 4px;
+  left: 50%;
+  margin-left: -72px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1c1e2a;
+  color: #fff;
+  font-family: CalibriLight;
+  font-size: 16px;
+  position: absolute;
+  z-index: 1.5;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-header {
+  text-align: left;
+  margin-top: 10px;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-header b {
+  font-family: CalibriBold;
+  font-size: 24px;
+  line-height: 28px;
+  display: block;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-image {
+  text-align: left;
+  margin-top: 20px;
+  -webkit-border-radius: 150px;
+          border-radius: 150px;
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-image div.img {
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-description {
+  text-align: left;
+  margin-top: 30px;
+  position: relative;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-description div {
+  margin-bottom: 5px;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-description div * {
+  font-family: Calibri;
+  font-size: 14px;
+  display: inline-block;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-description div i {
+  font-style: normal;
+}
+section#offer div.offer-container div.main-block div#sidebar div.cost {
+  padding-top: 20px;
+  text-align: left;
+}
+section#offer div.offer-container div.main-block div#sidebar div.cost i {
+  display: inline-block;
+  font-family: Calibri;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+  border-top: 2px solid #00662e;
+}
+section#offer div.offer-container div.main-block div#sidebar div.cost div {
+  text-align: right;
+  display: inline-block;
+  float: right;
+}
+section#offer div.offer-container div.main-block div#sidebar div.cost div p.price {
+  color: #00662e;
+  font-size: 22px;
+  margin-right: 10px;
+  display: inline-block;
+  font-family: Trajan;
+}
+section#offer div.offer-container div.main-block div#sidebar div.cost div span.pricecurrency {
+  display: inline-block;
+  font-family: Trajan;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  border-top: 2px solid #00662e;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-button {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  display: block;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-button a {
+  font-family: Trajan;
+  font-size: 14px;
+  display: block;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #00662e;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  position: relative;
+}
+section#offer div.offer-container div.main-block div#sidebar div.offer-button a:hover {
+  letter-spacing: 1px;
+}
+section#offer div.offer-container div.main-block div.content {
+  width: 880px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: 1px solid #d3d3d3;
+}
+@media (max-width: 1500px) {
+  section#offer div.offer-container div.main-block div.content {
+    width: 580px;
+  }
+}
+@media (max-width: 1200px) {
+  section#offer div.offer-container div.main-block div.content {
+    width: 100%;
+    border: none;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.gallery-container {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+section#offer div.offer-container div.main-block div.content div.gallery-container div#gallery {
+  width: 100% !important;
+}
+section#offer div.offer-container div.main-block div.content div.gallery-container div#gallery .ug-strip-panel {
+  background-color: #1c1e2a;
+}
+section#offer div.offer-container div.main-block div.content div.gallery-container div#gallery .ug-thumb-wrapper {
+  cursor: pointer;
+}
+section#offer div.offer-container div.main-block div.content div.gallery-container div#gallery .ug-slider-wrapper {
+  width: 100% !important;
+}
+@media (max-width: 850px) {
+  section#offer div.offer-container div.main-block div.content div.gallery-container div#gallery {
+    height: 400px !important;
+  }
+}
+@media (max-width: 600px) {
+  section#offer div.offer-container div.main-block div.content div.gallery-container div#gallery .ug-button-play,
+  section#offer div.offer-container div.main-block div.content div.gallery-container div#gallery .ug-zoompanel {
+    display: none;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.gallery-container_for-print {
+  display: none;
+}
+section#offer div.offer-container div.main-block div.content div.content-header {
+  padding: 20px 40px;
+  padding-bottom: 0;
+}
+@media (max-width: 600px) {
+  section#offer div.offer-container div.main-block div.content div.content-header {
+    padding: 20px 30px;
+    padding-bottom: 0;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.breadcrumbs {
+  text-align: left;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.breadcrumbs * {
+  display: inline-block;
+  color: #808080;
+  font-family: Calibri;
+  font-size: 12px;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.breadcrumbs div {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.breadcrumbs a {
+  cursor: pointer !important;
+  border-bottom: 1px solid #808080;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.breadcrumbs a:hover {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.offer-id {
+  text-align: left;
+  margin-top: 10px;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.offer-id * {
+  font-family: CalibriLight;
+  font-size: 14px;
+  display: inline-block;
+}
+@media (max-width: 850px) {
+  section#offer div.offer-container div.main-block div.content div.content-header div.offer-id * {
+    font-size: 14px;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.offer-id i {
+  font-style: normal;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.status {
+  text-align: left;
+  margin-top: 10px;
+  z-index: -1;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.status p {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1c1e2a;
+  color: #fff;
+  font-family: CalibriLight;
+  font-size: 16px;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.recommended {
+  width: 230px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  height: 100px;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.recommended img {
+  position: absolute;
+  width: 100%;
+  max-height: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  z-index: 1.4;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.recommended div.border {
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  margin-left: -76px;
+  width: 152px;
+  height: 44px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+          box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  background: -webkit-gradient(linear, left top, right top, from(#e9c070), to(#bd9c71));
+  background: -webkit-linear-gradient(left, #e9c070, #bd9c71);
+  background: -o-linear-gradient(left, #e9c070, #bd9c71);
+  background: linear-gradient(to right, #e9c070, #bd9c71);
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.recommended p {
+  display: inline-block;
+  padding: 10px 0;
+  width: 144px;
+  top: 4px;
+  left: 50%;
+  margin-left: -72px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1c1e2a;
+  color: #fff;
+  font-family: CalibriLight;
+  font-size: 16px;
+  position: absolute;
+  z-index: 1.5;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.offer-header {
+  text-align: left;
+  margin-top: 10px;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.offer-header h1 {
+  font-family: CalibriBold;
+  font-size: 24px;
+  line-height: 28px;
+  display: block;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.cost {
+  padding-top: 10px;
+  text-align: left;
+  width: 100%;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.cost i {
+  display: inline-block;
+  font-family: Calibri;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+  margin-right: 15px;
+  border-top: 2px solid #00662e;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.cost div {
+  text-align: right;
+  display: inline-block;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.cost div p.price {
+  color: #00662e;
+  font-size: 22px;
+  margin-right: 10px;
+  display: inline-block;
+  font-family: Trajan;
+}
+section#offer div.offer-container div.main-block div.content div.content-header div.cost div span.pricecurrency {
+  display: inline-block;
+  font-family: Trajan;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  border-top: 2px solid #00662e;
+}
+section#offer div.offer-container div.main-block div.content div.text-block {
+  padding: 40px;
+  font-family: Calibri;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 25px;
+}
+@media (max-width: 600px) {
+  section#offer div.offer-container div.main-block div.content div.text-block {
+    padding: 30px;
+    padding-top: 25px;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.text-block * {
+  font-family: Calibri;
+  font-size: 16px;
+  line-height: 24px;
+}
+section#offer div.offer-container div.main-block div.content div.text-block b,
+section#offer div.offer-container div.main-block div.content div.text-block strong {
+  font-family: CalibriBold;
+}
+section#offer div.offer-container div.main-block div.content div.text-block i,
+section#offer div.offer-container div.main-block div.content div.text-block em {
+  font-family: CalibriLightItalic;
+}
+section#offer div.offer-container div.main-block div.content div.text-block a {
+  border-bottom: 1px solid #00662e;
+  color: #00662e;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+section#offer div.offer-container div.main-block div.content div.text-block a:hover {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+section#offer div.offer-container div.main-block div.content div.text-block sup {
+  font-size: 12px;
+  vertical-align: super;
+  line-height: 0;
+  height: 0;
+}
+section#offer div.offer-container div.main-block div.content div.text-block sub {
+  font-size: 12px;
+  vertical-align: sub;
+  line-height: 0;
+  height: 0;
+}
+section#offer div.offer-container div.main-block div.content div.text-block u {
+  border-bottom: 1px solid;
+}
+section#offer div.offer-container div.main-block div.content div.text-block h2 {
+  font-family: CalibriBold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  display: inline-block;
+}
+section#offer div.offer-container div.main-block div.content div.labels {
+  padding: 40px;
+  padding-top: 10px;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+@media (max-width: 600px) {
+  section#offer div.offer-container div.main-block div.content div.labels {
+    padding: 30px;
+  }
+}
+@media (max-width: 500px) {
+  section#offer div.offer-container div.main-block div.content div.labels {
+    text-align: center;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.labels h2 {
+  font-family: CalibriBold;
+  font-size: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  section#offer div.offer-container div.main-block div.content div.labels h2 {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.labels ul li {
+  display: inline-block;
+  width: 49%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+@media (max-width: 1000px) {
+  section#offer div.offer-container div.main-block div.content div.labels ul li {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  section#offer div.offer-container div.main-block div.content div.labels ul li {
+    width: 100%;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.labels ul li img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: top;
+}
+section#offer div.offer-container div.main-block div.content div.labels ul li b,
+section#offer div.offer-container div.main-block div.content div.labels ul li p {
+  vertical-align: top;
+}
+section#offer div.offer-container div.main-block div.content div.labels ul li p {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+}
+@media (max-width: 1500px) {
+  section#offer div.offer-container div.main-block div.content div.labels ul li p {
+    width: 180px;
+  }
+}
+@media (max-width: 1200px) {
+  section#offer div.offer-container div.main-block div.content div.labels ul li p {
+    width: 220px;
+  }
+}
+@media (max-width: 1000px) {
+  section#offer div.offer-container div.main-block div.content div.labels ul li p {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.labels ul li b {
+  display: block;
+}
+section#offer div.offer-container div.main-block div.content div.labels p {
+  font-family: Calibri;
+  font-size: 16px;
+  line-height: 24px;
+}
+section#offer div.offer-container div.main-block div.content div.labels b {
+  font-family: CalibriBold;
+  font-size: 16px;
+  line-height: 24px;
+}
+section#offer div.offer-container div.main-block div.content div.labels sup {
+  font-size: 12px;
+  vertical-align: super;
+  line-height: 0;
+  height: 0;
+}
+section#offer div.offer-container div.main-block div.content div.buttons {
+  padding: 20px 40px;
+}
+@media (max-width: 600px) {
+  section#offer div.offer-container div.main-block div.content div.buttons {
+    padding: 30px;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.buttons div.socials {
+  display: inline-block;
+  vertical-align: middle;
+}
+section#offer div.offer-container div.main-block div.content div.buttons div.socials div.widget {
+  display: inline-block;
+  margin: 5px;
+  margin-left: 0;
+  vertical-align: middle;
+}
+section#offer div.offer-container div.main-block div.content div.buttons div.print {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  padding: 10px;
+}
+@media (max-width: 1400px) {
+  section#offer div.offer-container div.main-block div.content div.buttons div.print {
+    float: none;
+    text-align: left;
+    display: block;
+    margin-left: 0;
+    clear: both;
+    margin-top: 10px;
+  }
+}
+section#offer div.offer-container div.main-block div.content div.buttons div.print a {
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+section#offer div.offer-container div.main-block div.content div.buttons div.print a img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+section#offer div.offer-container div.main-block div.content div.buttons div.print a p {
+  display: inline-block;
+  font-family: Calibri;
+  font-size: 14px;
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+section#offer div.offer-container div.main-block div.content div.buttons div.print a:hover p {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+section#offer div.offer-container div.footer-block {
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 1px solid #d3d3d3;
+}
+@media (max-width: 850px) {
+  section#offer div.offer-container div.footer-block {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 600px) {
+  section#offer div.offer-container div.footer-block {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+}
+section#offer div.offer-container div.footer-block div.worker {
+  width: 660px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: middle;
+}
+@media (max-width: 1500px) {
+  section#offer div.offer-container div.footer-block div.worker {
+    width: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  section#offer div.offer-container div.footer-block div.worker {
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  section#offer div.offer-container div.footer-block div.worker {
+    padding-top: 30px;
+  }
+}
+section#offer div.offer-container div.footer-block div.worker div.img-block {
+  -webkit-border-radius: 150px;
+          border-radius: 150px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (max-width: 1500px) {
+  section#offer div.offer-container div.footer-block div.worker div.img-block {
+    width: 180px;
+    height: 180px;
+  }
+}
+section#offer div.offer-container div.footer-block div.worker div.img-block div.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+}
+section#offer div.offer-container div.footer-block div.worker div.description {
+  width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+  text-align: left;
+}
+@media (max-width: 1500px) {
+  section#offer div.offer-container div.footer-block div.worker div.description {
+    width: 200px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 600px) {
+  section#offer div.offer-container div.footer-block div.worker div.description {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+  }
+}
+section#offer div.offer-container div.footer-block div.worker div.description * {
+  display: block;
+  font-family: CalibriLight;
+  font-size: 14px;
+  line-height: 18px;
+}
+section#offer div.offer-container div.footer-block div.worker div.description b.name {
+  font-weight: 400;
+  font-size: 20px;
+}
+section#offer div.offer-container div.footer-block div.worker div.description p.phone {
+  font-size: 20px;
+}
+section#offer div.offer-container div.footer-block div.worker div.note {
+  display: block;
+  margin-top: 30px;
+  font-family: CalibriLight;
+  font-size: 14px;
+  line-height: 18px;
+  left-align: left;
+}
+@media (max-width: 850px) {
+  section#offer div.offer-container div.footer-block div.worker div.note {
+    text-align: center;
+  }
+}
+section#offer div.offer-container div.footer-block div.form-container {
+  display: inline-block;
+  width: 450px;
+  vertical-align: middle;
+}
+@media (max-width: 1500px) {
+  section#offer div.offer-container div.footer-block div.form-container {
+    width: 390px;
+  }
+}
+@media (max-width: 1200px) {
+  section#offer div.offer-container div.footer-block div.form-container {
+    width: 100%;
+    float: none;
+    margin-top: 50px;
+  }
+}
+section#offer div.offer-container div.footer-block div.form-container div.header p {
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+}
+section#offer div.offer-container div.footer-block div.form-container form {
+  background-color: #fff;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 1500px) {
+  section#offer div.offer-container div.footer-block div.form-container form {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  section#offer div.offer-container div.footer-block div.form-container form {
+    max-width: 400px;
+  }
+}
+section#offer div.offer-container div.footer-block div.form-container form >input,
+section#offer div.offer-container div.footer-block div.form-container form textarea {
+  border: 1px solid #00662e;
+  background-color: rgba(123,123,123,0.2);
+  padding: 12px 20px;
+  padding-right: 50px;
+  font-family: CalibriLight;
+  font-size: 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000;
+  margin-bottom: 10px;
+}
+section#offer div.offer-container div.footer-block div.form-container form >input::-webkit-input-placeholder,
+section#offer div.offer-container div.footer-block div.form-container form textarea::-webkit-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#offer div.offer-container div.footer-block div.form-container form >input::-moz-placeholder,
+section#offer div.offer-container div.footer-block div.form-container form textarea::-moz-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#offer div.offer-container div.footer-block div.form-container form >input:-ms-input-placeholder,
+section#offer div.offer-container div.footer-block div.form-container form textarea:-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#offer div.offer-container div.footer-block div.form-container form >input::-ms-input-placeholder,
+section#offer div.offer-container div.footer-block div.form-container form textarea::-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#offer div.offer-container div.footer-block div.form-container form >input::placeholder,
+section#offer div.offer-container div.footer-block div.form-container form textarea::placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#offer div.offer-container div.footer-block div.form-container form textarea {
+  height: 80px;
+  resize: none;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.checkbox {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.checkbox input {
+  width: 13px;
+  height: 13px;
+  vertical-align: top;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  margin-right: 5px;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.checkbox label {
+  color: #000;
+  font-weight: 200;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+  width: 90%;
+  display: inline-block;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.checkbox label:hover {
+  opacity: 1;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.checkbox label a {
+  color: #000;
+  font-weight: 200;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.errors {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.errors span {
+  display: block;
+  font-family: CalibriLight;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #f17e73;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.form-button_div {
+  margin-top: 15px;
+  text-align: center;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.form-button_div a {
+  background-color: #00662e;
+  color: #fff;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#offer div.offer-container div.footer-block div.form-container form div.form-button_div a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.loading {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 0px;
+  display: none;
+  text-align: center;
+}
+section#offer div.offer-container div.footer-block div.form-container form div.loading img {
+  width: 60px;
+  height: 60px;
+}
+section#offer div.offer-container div.footer-block_for-print {
+  display: none;
+}
+section#recomended {
+  margin-top: 80px !important;
+}
+section#recomended div.offers-header {
+  text-align: left;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) and (min-width: 600px) {
+  section#recomended div.offers-header {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 600px) and (min-width: 500px) {
+  section#recomended div.offers-header {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+section#recomended div.offers-header p {
+  font-size: 22px;
+  font-family: Trajan;
+  font-weight: 300;
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  section#recomended div.offer-card-container div.offer-card:last-child {
+    display: none;
+  }
+}
+section#recomended div.offer-card-container {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+section#recomended div.offer-card-container div.look-more {
+  margin-top: 20px;
+  text-align: center;
+}
+section#recomended div.offer-card-container div.look-more a {
+  background-color: #00662e;
+  color: #fff;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#recomended div.offer-card-container div.look-more a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}

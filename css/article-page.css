@@ -1,0 +1,773 @@
+.sticky-sidebar {
+  position: fixed;
+  z-index: 2;
+}
+.stop-sidebar {
+  position: relative;
+  z-index: 2;
+}
+section#article {
+  padding-top: 70px;
+}
+@media (max-width: 850px) {
+  section#article {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 850px) {
+  section#article div.page-container {
+    width: 100%;
+  }
+}
+section#article div.article-container {
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  background-color: #fff;
+  margin: 0 auto;
+}
+section#article div.article-container div.admin-edit {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  width: 200px;
+  z-index: 2;
+}
+@media (max-width: 850px) {
+  section#article div.article-container div.admin-edit {
+    right: 10px;
+    top: 30px;
+  }
+}
+section#article div.article-container div.admin-edit >a {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+}
+@media (max-width: 850px) {
+  section#article div.article-container div.admin-edit >a {
+    background-color: rgba(28,30,42,0.4);
+  }
+}
+section#article div.article-container div.admin-edit >a img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+section#article div.article-container div.admin-edit >a p {
+  color: #fff;
+  font-family: Calibri;
+  display: inline-block;
+  vertical-align: middle;
+}
+section#article div.article-container div.main-block div.sidebar {
+  top: 0;
+  width: 320px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  float: right;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  section#article div.article-container div.main-block div.sidebar {
+    float: none;
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 1px solid #d3d3d3;
+    display: none;
+  }
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles >a.similar-article {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+  min-height: 200px;
+  text-align: left;
+  position: relative;
+  border-bottom: 1px solid #d3d3d3;
+  background-color: #1c1e2a;
+  overflow: hidden;
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles >a.similar-article div.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0.2;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles >a.similar-article div.text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles >a.similar-article b {
+  font-family: CalibriBold;
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles >a.similar-article div.themes {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles >a.similar-article div.themes * {
+  display: inline-block;
+  margin: 2px 0;
+  margin-right: 2px;
+  color: #fff;
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles >a.similar-article div.themes i {
+  font-style: normal;
+}
+section#article div.article-container div.main-block div.sidebar div.similar-articles >a.similar-article:hover div.background {
+  opacity: 0.5;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+section#article div.article-container div.main-block div.content {
+  width: 880px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: 1px solid #d3d3d3;
+}
+@media (max-width: 1500px) {
+  section#article div.article-container div.main-block div.content {
+    width: 580px;
+  }
+}
+@media (max-width: 1200px) {
+  section#article div.article-container div.main-block div.content {
+    width: 100%;
+    border: none;
+  }
+}
+section#article div.article-container div.main-block div.content div.image-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 1500px) {
+  section#article div.article-container div.main-block div.content div.image-container {
+    height: 350px;
+  }
+}
+@media (max-width: 850px) {
+  section#article div.article-container div.main-block div.content div.image-container {
+    height: 400px;
+  }
+}
+@media (max-width: 600px) {
+  section#article div.article-container div.main-block div.content div.image-container {
+    height: 500px;
+  }
+}
+section#article div.article-container div.main-block div.content div.image-container div.img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: absolute;
+}
+@media (max-width: 1500px) {
+  section#article div.article-container div.main-block div.content div.image-container div.img {
+    height: 380px;
+  }
+}
+@media (max-width: 850px) {
+  section#article div.article-container div.main-block div.content div.image-container div.img {
+    height: 430px;
+  }
+}
+@media (max-width: 600px) {
+  section#article div.article-container div.main-block div.content div.image-container div.img {
+    height: 530px;
+  }
+}
+section#article div.article-container div.main-block div.content div.image-container div.image-overlay {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 101%;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #1c1e2a), color-stop(90%, rgba(0,0,0,0)));
+  background: -webkit-linear-gradient(bottom, #1c1e2a 20%, rgba(0,0,0,0) 90%);
+  background: -o-linear-gradient(bottom, #1c1e2a 20%, rgba(0,0,0,0) 90%);
+  background: linear-gradient(to top, #1c1e2a 20%, rgba(0,0,0,0) 90%);
+  opacity: 0.9;
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 40px;
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.article-header h1 {
+  font-family: Calibri;
+  font-size: 40px;
+  position: relative;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.article-header h1 {
+    font-size: 30px;
+  }
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.article-date {
+  margin-top: 10px;
+  padding-left: 2px;
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.article-date p {
+  font-family: CalibriLight;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.themes {
+  padding-left: 2px;
+  margin-top: 10px;
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.themes * {
+  display: inline-block;
+  color: #fff;
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.themes p {
+  margin-right: 10px;
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.themes a {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin: 2px 0;
+  margin-right: 7px;
+  border-bottom: 1px solid #fff;
+}
+section#article div.article-container div.main-block div.content div.image-container div.text-on-image div.themes a:hover {
+  color: #9d9d9d;
+  border-bottom: 1px solid #9d9d9d;
+}
+section#article div.article-container div.main-block div.content div.text-block {
+  padding: 40px;
+  font-family: Calibri;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media (max-width: 600px) {
+  section#article div.article-container div.main-block div.content div.text-block {
+    padding: 30px;
+  }
+}
+section#article div.article-container div.main-block div.content div.text-block * {
+  font-family: Calibri;
+  font-size: 16px;
+  line-height: 24px;
+}
+section#article div.article-container div.main-block div.content div.text-block b,
+section#article div.article-container div.main-block div.content div.text-block strong {
+  font-family: CalibriBold;
+}
+section#article div.article-container div.main-block div.content div.text-block i,
+section#article div.article-container div.main-block div.content div.text-block em {
+  font-family: CalibriLightItalic;
+}
+section#article div.article-container div.main-block div.content div.text-block img {
+  max-width: 100%;
+}
+section#article div.article-container div.main-block div.content div.text-block li {
+  list-style: circle inside;
+  margin-bottom: 3px;
+}
+section#article div.article-container div.main-block div.content div.text-block a {
+  border-bottom: 1px solid #00662e;
+  color: #00662e;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+section#article div.article-container div.main-block div.content div.text-block a:hover {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+section#article div.article-container div.main-block div.content div.text-block sup {
+  font-size: 12px;
+  vertical-align: super;
+  line-height: 0;
+  height: 0;
+}
+section#article div.article-container div.main-block div.content div.text-block sub {
+  font-size: 12px;
+  vertical-align: sub;
+  line-height: 0;
+  height: 0;
+}
+section#article div.article-container div.main-block div.content div.text-block u {
+  border-bottom: 1px solid;
+}
+section#article div.article-container div.main-block div.content div.buttons {
+  padding: 40px;
+  padding-top: 10px;
+}
+@media (max-width: 600px) {
+  section#article div.article-container div.main-block div.content div.buttons {
+    padding: 30px;
+  }
+}
+section#article div.article-container div.main-block div.content div.buttons div.socials {
+  display: inline-block;
+  vertical-align: middle;
+}
+section#article div.article-container div.main-block div.content div.buttons div.socials div.widget {
+  display: inline-block;
+  margin: 5px;
+  margin-left: 0;
+  vertical-align: middle;
+}
+section#article div.article-container div.main-block div.content div.buttons div.print {
+  display: inline-block;
+  text-align: right;
+  float: right;
+  padding: 10px;
+}
+@media (max-width: 1400px) {
+  section#article div.article-container div.main-block div.content div.buttons div.print {
+    float: none;
+    text-align: left;
+    display: block;
+    margin-left: 0;
+    clear: both;
+    margin-top: 10px;
+  }
+}
+section#article div.article-container div.main-block div.content div.buttons div.print a {
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+section#article div.article-container div.main-block div.content div.buttons div.print a img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+section#article div.article-container div.main-block div.content div.buttons div.print a p {
+  display: inline-block;
+  font-family: Calibri;
+  font-size: 14px;
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+section#article div.article-container div.main-block div.content div.buttons div.print a:hover p {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+section#article div.article-container div.similar-articles_mobile {
+  position: relative;
+  display: none;
+}
+@media (max-width: 1200px) {
+  section#article div.article-container div.similar-articles_mobile {
+    display: block;
+  }
+}
+section#article div.article-container div.similar-articles_mobile a {
+  display: block;
+  border-top: 1px solid #d3d3d3;
+  padding: 20px 40px;
+}
+section#article div.article-container div.similar-articles_mobile a b {
+  font-family: CalibriBold;
+  font-size: 22px;
+}
+section#article div.article-container div.similar-articles_mobile a div.themes {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+}
+section#article div.article-container div.similar-articles_mobile a div.themes * {
+  display: inline-block;
+  margin: 2px;
+}
+section#article div.article-container div.similar-articles_mobile a div.themes i {
+  font-style: normal;
+}
+section#article div.article-container div.footer-block {
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 1px solid #d3d3d3;
+}
+@media (max-width: 850px) {
+  section#article div.article-container div.footer-block {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 600px) {
+  section#article div.article-container div.footer-block {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+}
+section#article div.article-container div.footer-block div.worker {
+  width: 660px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: middle;
+}
+@media (max-width: 1500px) {
+  section#article div.article-container div.footer-block div.worker {
+    width: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  section#article div.article-container div.footer-block div.worker {
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  section#article div.article-container div.footer-block div.worker {
+    padding-top: 30px;
+  }
+}
+section#article div.article-container div.footer-block div.worker div.img-block {
+  -webkit-border-radius: 150px;
+          border-radius: 150px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (max-width: 1500px) {
+  section#article div.article-container div.footer-block div.worker div.img-block {
+    width: 180px;
+    height: 180px;
+  }
+}
+section#article div.article-container div.footer-block div.worker div.img-block div.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+}
+section#article div.article-container div.footer-block div.worker div.description {
+  width: 300px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 30px;
+  text-align: left;
+}
+@media (max-width: 1500px) {
+  section#article div.article-container div.footer-block div.worker div.description {
+    width: 200px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 600px) {
+  section#article div.article-container div.footer-block div.worker div.description {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+  }
+}
+section#article div.article-container div.footer-block div.worker div.description * {
+  display: block;
+  font-family: Calibrilight;
+  font-size: 14px;
+  line-height: 18px;
+}
+section#article div.article-container div.footer-block div.worker div.description b.name {
+  font-weight: 400;
+  font-size: 20px;
+}
+section#article div.article-container div.footer-block div.worker div.description p.phone {
+  font-size: 20px;
+}
+section#article div.article-container div.footer-block div.worker div.note {
+  display: block;
+  margin-top: 30px;
+  font-family: CalibriLight;
+  font-size: 14px;
+  line-height: 18px;
+  left-align: left;
+}
+@media (max-width: 850px) {
+  section#article div.article-container div.footer-block div.worker div.note {
+    text-align: center;
+  }
+}
+section#article div.article-container div.footer-block div.form-container {
+  display: inline-block;
+  width: 450px;
+  vertical-align: middle;
+}
+@media (max-width: 1500px) {
+  section#article div.article-container div.footer-block div.form-container {
+    width: 390px;
+  }
+}
+@media (max-width: 1200px) {
+  section#article div.article-container div.footer-block div.form-container {
+    width: 100%;
+    float: none;
+    margin-top: 50px;
+  }
+}
+section#article div.article-container div.footer-block div.form-container div.header p {
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+}
+section#article div.article-container div.footer-block div.form-container form {
+  background-color: #fff;
+  width: 450px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 1500px) {
+  section#article div.article-container div.footer-block div.form-container form {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  section#article div.article-container div.footer-block div.form-container form {
+    max-width: 400px;
+  }
+}
+section#article div.article-container div.footer-block div.form-container form >input,
+section#article div.article-container div.footer-block div.form-container form textarea {
+  border: 1px solid #00662e;
+  background-color: rgba(123,123,123,0.2);
+  padding: 12px 20px;
+  padding-right: 50px;
+  font-family: Calibri;
+  font-size: 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000;
+  margin-bottom: 10px;
+}
+section#article div.article-container div.footer-block div.form-container form >input::-webkit-input-placeholder,
+section#article div.article-container div.footer-block div.form-container form textarea::-webkit-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#article div.article-container div.footer-block div.form-container form >input::-moz-placeholder,
+section#article div.article-container div.footer-block div.form-container form textarea::-moz-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#article div.article-container div.footer-block div.form-container form >input:-ms-input-placeholder,
+section#article div.article-container div.footer-block div.form-container form textarea:-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#article div.article-container div.footer-block div.form-container form >input::-ms-input-placeholder,
+section#article div.article-container div.footer-block div.form-container form textarea::-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#article div.article-container div.footer-block div.form-container form >input::placeholder,
+section#article div.article-container div.footer-block div.form-container form textarea::placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#article div.article-container div.footer-block div.form-container form textarea {
+  height: 80px;
+  resize: none;
+}
+section#article div.article-container div.footer-block div.form-container form div.checkbox {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+section#article div.article-container div.footer-block div.form-container form div.checkbox input {
+  width: 13px;
+  height: 13px;
+  vertical-align: top;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 5px;
+  border: 1px solid #f00;
+}
+section#article div.article-container div.footer-block div.form-container form div.checkbox label {
+  color: #000;
+  font-weight: 200;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+  width: 90%;
+  display: inline-block;
+  text-align: left;
+  margin-top: -3px;
+}
+section#article div.article-container div.footer-block div.form-container form div.checkbox label:hover {
+  opacity: 1;
+}
+section#article div.article-container div.footer-block div.form-container form div.checkbox label a {
+  color: #000;
+  font-weight: 200;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+}
+section#article div.article-container div.footer-block div.form-container form div.errors {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+section#article div.article-container div.footer-block div.form-container form div.errors span {
+  display: block;
+  font-family: CalibriLight;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #f17e73;
+}
+section#article div.article-container div.footer-block div.form-container form div.form-button_div {
+  margin-top: 15px;
+  text-align: center;
+}
+section#article div.article-container div.footer-block div.form-container form div.form-button_div a {
+  background-color: #00662e;
+  color: #fff;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#article div.article-container div.footer-block div.form-container form div.form-button_div a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}
+section#article div.article-container div.footer-block div.form-container form div.loading {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 0px;
+  display: none;
+  text-align: center;
+}
+section#article div.article-container div.footer-block div.form-container form div.loading img {
+  width: 60px;
+  height: 60px;
+}
+section#article div.article-container div.footer-block_for-print {
+  display: none;
+}
+section#recomended {
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+section#recomended div.offers-header {
+  text-align: left;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) and (min-width: 600px) {
+  section#recomended div.offers-header {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 600px) and (min-width: 500px) {
+  section#recomended div.offers-header {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+section#recomended div.offers-header p {
+  font-size: 22px;
+  font-family: Trajan;
+  font-weight: 300;
+}
+section#recomended div.offer-card-container {
+  text-align: center;
+}
+section#recomended div.look-more {
+  margin-top: 20px;
+  text-align: center;
+}
+section#recomended div.look-more a {
+  background-color: #00662e;
+  color: #fff;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#recomended div.look-more a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  section#recomended div.offer-card-container div.offer-card:last-child {
+    display: none;
+  }
+}

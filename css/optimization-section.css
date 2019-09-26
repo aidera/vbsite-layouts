@@ -1,0 +1,168 @@
+section#optimization {
+  position: relative;
+  padding-top: 80px;
+}
+@media (max-width: 600px) {
+  section#optimization {
+    padding-top: 50px;
+  }
+}
+@media (max-width: 600px) {
+  section#optimization div.page-container {
+    width: 100%;
+  }
+}
+section#optimization div.text {
+  font-family: CalibriLight;
+  font-size: 16px;
+  line-height: 20px;
+}
+section#optimization div.text * {
+  font-family: CalibriLight;
+  font-size: 16px;
+  line-height: 20px;
+}
+section#optimization div.text h2 {
+  font-family: Trajan;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+section#optimization div.text h3,
+section#optimization div.text h4,
+section#optimization div.text h5 {
+  font-size: 18px;
+  font-family: Calibri;
+  margin-bottom: 10px;
+}
+section#optimization div.text b,
+section#optimization div.text strong {
+  font-family: CalibriBold;
+}
+section#optimization div.text i,
+section#optimization div.text em {
+  font-family: CalibriLightItalic;
+}
+section#optimization div.text li {
+  list-style: circle inside;
+  margin-bottom: 3px;
+}
+section#optimization div.text a {
+  border-bottom: 1px solid #00662e;
+  color: #00662e;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+section#optimization div.text a:hover {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+section#optimization div.primary-block {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 30px 20px;
+  text-align: left;
+  width: 800px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 14px;
+}
+@media (max-width: 1500px) {
+  section#optimization div.primary-block {
+    width: 100%;
+  }
+}
+section#optimization div.secondary-block {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 30px 20px;
+  text-align: left;
+  width: 380px;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 1500px) {
+  section#optimization div.secondary-block {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 600px) {
+  section#optimization div.secondary-block {
+    margin-top: 0;
+  }
+}
+section#optimization div.secondary-block li {
+  list-style: none;
+  display: block;
+  margin-bottom: 5px;
+}
+section#optimization div.secondary-block li p,
+section#optimization div.secondary-block li a {
+  display: inline;
+}
+section#optimization div.secondary-block li a {
+  border-bottom: 1px solid rgba(0,0,0,0);
+  color: #000;
+}
+section#optimization div.secondary-block li a:hover {
+  color: #9d9d9d;
+}
+section#optimization div.socials {
+  margin-top: 20px;
+}
+section#optimization div.socials a {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+section#optimization div.socials a:hover {
+  opacity: 1;
+}
+section#optimization div.socials a img {
+  width: 100%;
+  height: 100%;
+}
+section#articles-section {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+section#articles-section div.look-more {
+  margin-top: 20px;
+  text-align: center;
+}
+section#articles-section div.look-more a {
+  background-color: #00662e;
+  color: #fff;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#articles-section div.look-more a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}

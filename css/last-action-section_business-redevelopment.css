@@ -1,0 +1,520 @@
+section#last-action_large {
+  min-height: 100vh;
+  padding-bottom: 100px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+section#last-action_large div.background div.gradient {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #000), color-stop(90%, #1c1e2a));
+  background: -webkit-linear-gradient(bottom, #000 10%, #1c1e2a 90%);
+  background: -o-linear-gradient(bottom, #000 10%, #1c1e2a 90%);
+  background: linear-gradient(to top, #000 10%, #1c1e2a 90%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+}
+section#last-action_large div.background div.img {
+  background-image: url("../img/pages/last-action_large2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  z-index: -1;
+}
+section#last-action_large >div.content {
+  width: 80%;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  margin-top: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+section#last-action_large >div.content >div.logo {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-left: -25px;
+}
+@media (max-width: 600px) {
+  section#last-action_large >div.content >div.logo {
+    margin-left: 0;
+  }
+}
+section#last-action_large >div.content >div.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+section#last-action_large >div.content form {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+section#last-action_large >div.content form div.part {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  display: none;
+}
+section#last-action_large >div.content form div.part.part1 {
+  display: inline-block;
+}
+section#last-action_large >div.content form div.part div.headers {
+  margin-bottom: 30px;
+  width: 100%;
+}
+section#last-action_large >div.content form div.part div.headers * {
+  color: #fff;
+  display: block;
+}
+section#last-action_large >div.content form div.part div.headers span {
+  font-family: CalibriLight;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+section#last-action_large >div.content form div.part div.headers b {
+  font-family: Trajan;
+  font-weight: 200;
+  font-size: 22px;
+}
+section#last-action_large >div.content form div.part div.headers p {
+  font-family: CalibriLight;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+section#last-action_large >div.content form div.part div.questions div.question {
+  margin-bottom: 20px;
+}
+section#last-action_large >div.content form div.part div.questions div.question input.simple {
+  border: 2px solid #00662e;
+  background-color: rgba(123,123,123,0.4);
+  padding: 12px 20px;
+  padding-right: 50px;
+  font-family: CalibriLight;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  margin-bottom: 10px;
+}
+@media (max-width: 450px) {
+  section#last-action_large >div.content form div.part div.questions div.question input.simple {
+    width: 95%;
+  }
+}
+section#last-action_large >div.content form div.part div.questions div.question input.simple::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question input.simple::-moz-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question input.simple:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question input.simple::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question input.simple::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question label.near-input {
+  color: #fff;
+  padding-left: 10px;
+  font-size: 16px;
+}
+section#last-action_large >div.content form div.part div.questions div.question label.top-input {
+  color: #fff;
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+section#last-action_large >div.content form div.part div.questions div.question ul.icons-list li {
+  cursor: pointer;
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border: 1px solid #fff;
+  text-align: center;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(255,255,255,0.1)), color-stop(60%, rgba(255,255,255,0)), color-stop(90%, rgba(255,255,255,0.1)));
+  background: -webkit-linear-gradient(bottom, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.1) 90%);
+  background: -o-linear-gradient(bottom, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.1) 90%);
+  background: linear-gradient(to top, rgba(255,255,255,0.1) 10%, rgba(255,255,255,0) 60%, rgba(255,255,255,0.1) 90%);
+  padding: 10px;
+  padding-top: 20px;
+  vertical-align: top;
+  margin-right: 10px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#last-action_large >div.content form div.part div.questions div.question ul.icons-list li:hover {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(255,255,255,0.2)), color-stop(60%, rgba(255,255,255,0.1)), color-stop(90%, rgba(255,255,255,0.2)));
+  background: -webkit-linear-gradient(bottom, rgba(255,255,255,0.2) 10%, rgba(255,255,255,0.1) 60%, rgba(255,255,255,0.2) 90%);
+  background: -o-linear-gradient(bottom, rgba(255,255,255,0.2) 10%, rgba(255,255,255,0.1) 60%, rgba(255,255,255,0.2) 90%);
+  background: linear-gradient(to top, rgba(255,255,255,0.2) 10%, rgba(255,255,255,0.1) 60%, rgba(255,255,255,0.2) 90%);
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+section#last-action_large >div.content form div.part div.questions div.question ul.icons-list li.active {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0,102,46,0.3)), color-stop(60%, rgba(0,102,46,0.1)), color-stop(90%, rgba(0,102,46,0.3)));
+  background: -webkit-linear-gradient(bottom, rgba(0,102,46,0.3) 10%, rgba(0,102,46,0.1) 60%, rgba(0,102,46,0.3) 90%);
+  background: -o-linear-gradient(bottom, rgba(0,102,46,0.3) 10%, rgba(0,102,46,0.1) 60%, rgba(0,102,46,0.3) 90%);
+  background: linear-gradient(to top, rgba(0,102,46,0.3) 10%, rgba(0,102,46,0.1) 60%, rgba(0,102,46,0.3) 90%);
+}
+section#last-action_large >div.content form div.part div.questions div.question ul.icons-list li.active:hover {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0,102,46,0.5)), color-stop(60%, rgba(0,102,46,0.1)), color-stop(90%, rgba(0,102,46,0.5)));
+  background: -webkit-linear-gradient(bottom, rgba(0,102,46,0.5) 10%, rgba(0,102,46,0.1) 60%, rgba(0,102,46,0.5) 90%);
+  background: -o-linear-gradient(bottom, rgba(0,102,46,0.5) 10%, rgba(0,102,46,0.1) 60%, rgba(0,102,46,0.5) 90%);
+  background: linear-gradient(to top, rgba(0,102,46,0.5) 10%, rgba(0,102,46,0.1) 60%, rgba(0,102,46,0.5) 90%);
+}
+section#last-action_large >div.content form div.part div.questions div.question ul.icons-list li img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+section#last-action_large >div.content form div.part div.questions div.question ul.icons-list li p {
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator {
+  position: relative;
+  width: 260px;
+  cursor: pointer;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 1100px) {
+  section#last-action_large >div.content form div.part div.questions div.question div.select-imitator {
+    width: 100%;
+  }
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator div.input-container {
+  position: relative;
+  width: 100%;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator div.input-container input {
+  width: 100%;
+  cursor: pointer;
+  padding-right: 35px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border: 2px solid #00662e;
+  background-color: rgba(123,123,123,0.4);
+  padding: 12px 20px;
+  font-family: CalibriLight;
+  font-size: 16px;
+  color: #fff;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator div.input-container input::-webkit-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator div.input-container input::-moz-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator div.input-container input:-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator div.input-container input::-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator div.input-container input::placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator div.input-container img.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 1;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list {
+  border: 1px solid #00662e;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 7;
+  top: 38px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+@media (max-width: 600px) {
+  section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list {
+    position: fixed;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 350px) {
+  section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list {
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -100px;
+  }
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list li {
+  display: block;
+  width: 100%;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list li span {
+  background: #fff;
+  display: block;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px;
+  position: relative;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list li span:hover {
+  background: #d3d3d3;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list li span p {
+  font-size: 14px;
+  font-family: Calibri;
+  display: inline-block;
+  padding-left: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list li span img.check {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  display: none;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator ul.list li span.active img.check {
+  display: block;
+}
+section#last-action_large >div.content form div.part div.questions div.question div.select-imitator_simplify ul.list li span.active {
+  background-color: #e5e5e5;
+}
+section#last-action_large >div.content form div.part div.questions div.question.question2 input.simple {
+  max-width: 60px;
+  padding: 12px 10px;
+}
+section#last-action_large >div.content form div.part div.questions div.question.question4 input.simple,
+section#last-action_large >div.content form div.part div.questions div.question.question5 input.simple {
+  max-width: 160px;
+}
+section#last-action_large >div.content form div.part div.questions div.question.question4 div.select-imitator,
+section#last-action_large >div.content form div.part div.questions div.question.question5 div.select-imitator {
+  width: 130px;
+  display: inline-block;
+}
+section#last-action_large >div.content form div.part div.buttons {
+  width: 100%;
+  text-align: left;
+}
+section#last-action_large >div.content form div.part div.buttons a {
+  background-color: #00662e;
+  display: inline-block;
+  padding: 15px 20px;
+  min-width: 150px;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+section#last-action_large >div.content form div.part div.buttons a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}
+section#last-action_large >div.content form div.navigation {
+  width: 29%;
+  display: inline-block;
+  vertical-align: top;
+}
+section#last-action_large >div.content form div.navigation ul {
+  border-left: 2px solid #fff;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+section#last-action_large >div.content form div.navigation ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+section#last-action_large >div.content form div.navigation ul li * {
+  color: #808080;
+}
+section#last-action_large >div.content form div.navigation ul li span.num {
+  display: inline-block;
+  font-family: Trajan;
+  font-size: 46px;
+  padding-top: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+section#last-action_large >div.content form div.navigation ul li div.text {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+}
+section#last-action_large >div.content form div.navigation ul li div.text b {
+  font-family: Trajan;
+  font-size: 20px;
+}
+section#last-action_large >div.content form div.navigation ul li div.text p {
+  font-size: 16px;
+  display: none;
+}
+section#last-action_large >div.content form div.navigation ul li.active {
+  cursor: pointer;
+}
+section#last-action_large >div.content form div.navigation ul li.active * {
+  color: #fff;
+}
+section#last-action_large >div.content form div.navigation ul li.active div.text p {
+  display: block;
+}
+section#last-action_large >div.content form div.checkbox {
+  text-align: left;
+  position: relative;
+  margin-left: 20px;
+}
+@media (max-width: 600px) {
+  section#last-action_large >div.content form div.checkbox {
+    text-align: center;
+  }
+}
+section#last-action_large >div.content form div.checkbox input {
+  width: 13px;
+  height: 13px;
+  vertical-align: bottom;
+  display: inline;
+  cursor: pointer;
+  margin-left: -20px;
+}
+section#last-action_large >div.content form div.checkbox label {
+  color: #fff;
+  font-weight: 200;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.7;
+  display: inline;
+}
+section#last-action_large >div.content form div.checkbox label:hover {
+  opacity: 1;
+}
+section#last-action_large >div.content form div.checkbox label a {
+  color: #fff;
+  font-weight: 200;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+section#last-action_large >div.content form div.errors {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+section#last-action_large >div.content form div.errors span {
+  display: block;
+  font-family: CalibriLight;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #f17e73;
+}
+section#last-action_large >div.content form div.form-button_div {
+  margin-top: 15px;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  section#last-action_large >div.content form div.form-button_div {
+    text-align: center;
+  }
+}
+section#last-action_large >div.content form div.form-button_div a {
+  background-color: #00662e;
+  color: #fff;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#last-action_large >div.content form div.form-button_div a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}
+section#last-action_large >div.content form div.loading {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 0px;
+  display: none;
+}
+section#last-action_large >div.content form div.loading img {
+  width: 60px;
+  height: 60px;
+}

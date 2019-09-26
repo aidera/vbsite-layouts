@@ -1,0 +1,148 @@
+section#general {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  section#general {
+    min-height: 600px;
+  }
+}
+section#general div.background {
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media (max-width: 1000px) {
+  section#general div.background {
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+}
+section#general div.background.small {
+  background-image: url("../img/pages/404-small.jpg");
+}
+section#general div.background.normal {
+  background-image: url("../img/pages/404.jpg") !important;
+}
+section#general div.gradient {
+  position: absolute;
+  width: 100%;
+  height: 40vh;
+  bottom: -2px;
+  z-index: -1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1c1e2a), color-stop(60%), to(rgba(28,30,42,0)));
+  background: -webkit-linear-gradient(bottom, #1c1e2a, 60%, rgba(28,30,42,0));
+  background: -o-linear-gradient(bottom, #1c1e2a, 60%, rgba(28,30,42,0));
+  background: linear-gradient(to top, #1c1e2a, 60%, rgba(28,30,42,0));
+}
+section#general >div.general-block >div.content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 30%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 800px) {
+  section#general >div.general-block >div.content {
+    top: 25%;
+  }
+}
+section#general >div.general-block >div.content >div.logo {
+  width: 90%;
+  max-width: 300px;
+  height: 180px;
+  display: inline-block;
+}
+section#general >div.general-block >div.content >div.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+section#general >div.general-block >div.content >div.logo p {
+  color: #ffca6a;
+  font-size: 120px;
+  letter-spacing: 10px;
+  font-family: Times New Roman;
+  font-weight: 100;
+  margin-bottom: 20px;
+  display: block;
+}
+section#general >div.general-block >div.content h1 {
+  color: #fff;
+  font-family: Trajan;
+  font-weight: 200;
+  font-size: 22px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  display: block;
+}
+section#general >div.general-block >div.content h2 {
+  color: #fff;
+  font-family: CalibriLight;
+  font-weight: 200;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: block;
+  width: 80%;
+}
+ul#list_buttons {
+  width: 650px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -325px;
+  z-index: 2;
+}
+@media (max-width: 800px) {
+  ul#list_buttons {
+    width: 90%;
+    margin-left: 0;
+    left: 5%;
+  }
+}
+ul#list_buttons li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px;
+}
+ul#list_buttons a {
+  display: block;
+  color: #fff;
+  font-weight: 200;
+  padding: 15px;
+  border: 1px solid #fff;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 16px;
+  margin-top: 0;
+  width: 200px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  background-color: rgba(28,30,42,0);
+  cursor: pointer;
+}
+ul#list_buttons a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  background-color: #00662e;
+  margin-top: -3px;
+  margin-bottom: 3px;
+}
+footer {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

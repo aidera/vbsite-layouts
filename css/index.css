@@ -1,0 +1,671 @@
+div.select-imitator_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 6;
+  display: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+section#general {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100vw;
+}
+@media (max-width: 1000px) {
+  section#general {
+    min-height: 600px;
+  }
+}
+section#general div.background {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+@media (max-width: 1000px) {
+  section#general div.background {
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+}
+section#general div.background.small {
+  background-image: url("../img/pages/index-small.jpg");
+}
+section#general div.background.normal {
+  background-image: url("../img/pages/index.jpg") !important;
+}
+section#general div.gradient {
+  background: -webkit-radial-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5));
+  background: -o-radial-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.5));
+  background: radial-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5));
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+section#general >div.general-block >div.content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 30%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 800px) {
+  section#general >div.general-block >div.content {
+    top: 25%;
+  }
+}
+section#general >div.general-block >div.content >div.logo {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+}
+section#general >div.general-block >div.content >div.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+section#general >div.general-block >div.content h1 {
+  color: #fff;
+  font-family: Trajan;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 30px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+section#general >div.general-block >div.content form {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+  margin-bottom: 15px;
+}
+@media (max-width: 380px) {
+  section#general >div.general-block >div.content form {
+    width: 90%;
+  }
+}
+section#general >div.general-block >div.content form input {
+  border: 2px solid #00662e;
+  background-color: rgba(123,123,123,0.4);
+  padding: 12px 20px;
+  padding-right: 50px;
+  font-family: CalibriLight;
+  font-size: 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+section#general >div.general-block >div.content form input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#general >div.general-block >div.content form input::-moz-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#general >div.general-block >div.content form input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#general >div.general-block >div.content form input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#general >div.general-block >div.content form input::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
+section#general >div.general-block >div.content form button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+section#general >div.general-block >div.content form button img {
+  width: 20px;
+  height: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+}
+section#general >div.general-block >div.content form button:hover {
+  opacity: 0.5;
+}
+section#general >div.general-block div.slide-down {
+  display: block;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-animation: slide-down-arrow 3s infinite ease-in-out;
+          animation: slide-down-arrow 3s infinite ease-in-out;
+}
+section#general >div.general-block div.slide-down:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+section#general >div.general-block div.slide-down a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+@-webkit-keyframes slide-down-arrow {
+  from {
+    margin-bottom: 0;
+  }
+  20% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 0px;
+  }
+  60% {
+    margin-bottom: 5px;
+  }
+  80% {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 0;
+  }
+}
+@keyframes slide-down-arrow {
+  from {
+    margin-bottom: 0;
+  }
+  20% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 0px;
+  }
+  60% {
+    margin-bottom: 5px;
+  }
+  80% {
+    margin-bottom: 0;
+  }
+  to {
+    margin-bottom: 0;
+  }
+}
+section#quester {
+  margin-top: 70px;
+}
+@media (max-width: 850px) {
+  section#quester {
+    text-align: center;
+  }
+}
+section#quester div.quester-container {
+  position: relative;
+  height: 400px;
+  background-color: #000;
+}
+@media (max-width: 500px) {
+  section#quester div.quester-container {
+    height: 450px;
+  }
+}
+section#quester div.bg {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: top right;
+  background-image: url("../img/pages/quester-form-bg.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+section#quester div.quest-block {
+  padding-top: 120px;
+  margin-left: 70px;
+  width: 400px;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (max-width: 1500px) {
+  section#quester div.quest-block {
+    width: 395px;
+  }
+}
+@media (max-width: 850px) {
+  section#quester div.quest-block {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  section#quester div.quest-block {
+    padding-bottom: 10px;
+  }
+}
+section#quester div.quest-block div.quest2,
+section#quester div.quest-block div.quest3,
+section#quester div.quest-block div.success,
+section#quester div.quest-block div.error {
+  display: none;
+}
+@media (max-width: 850px) {
+  section#quester div.quest-block div.text-block {
+    text-align: center;
+  }
+}
+section#quester div.quest-block div.text-block p {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: CalibriBold;
+  width: 100%;
+  padding-right: 50px;
+  color: #fff;
+}
+@media (max-width: 850px) {
+  section#quester div.quest-block div.text-block p {
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  section#quester div.quest-block div.text-block p {
+    width: 100%;
+    padding: 0;
+  }
+}
+section#quester div.quest-block div.input-block {
+  margin-top: 20px;
+}
+@media (max-width: 500px) {
+  section#quester div.quest-block div.input-block {
+    text-align: left;
+  }
+}
+section#quester div.quest-block div.input-block input,
+section#quester div.quest-block div.input-block select,
+section#quester div.quest-block div.input-block div.select-imitator input {
+  display: inline-block;
+  vertical-align: top;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border: 2px solid #00662e;
+  background-color: rgba(123,123,123,0.6);
+  padding: 12px 20px;
+  font-family: CalibriLight;
+  font-size: 16px;
+  color: #fff;
+  width: 300px;
+}
+section#quester div.quest-block div.input-block input::-webkit-input-placeholder,
+section#quester div.quest-block div.input-block select::-webkit-input-placeholder,
+section#quester div.quest-block div.input-block div.select-imitator input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+section#quester div.quest-block div.input-block input::-moz-placeholder,
+section#quester div.quest-block div.input-block select::-moz-placeholder,
+section#quester div.quest-block div.input-block div.select-imitator input::-moz-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+section#quester div.quest-block div.input-block input:-ms-input-placeholder,
+section#quester div.quest-block div.input-block select:-ms-input-placeholder,
+section#quester div.quest-block div.input-block div.select-imitator input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+section#quester div.quest-block div.input-block input::-ms-input-placeholder,
+section#quester div.quest-block div.input-block select::-ms-input-placeholder,
+section#quester div.quest-block div.input-block div.select-imitator input::-ms-input-placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+section#quester div.quest-block div.input-block input::placeholder,
+section#quester div.quest-block div.input-block select::placeholder,
+section#quester div.quest-block div.input-block div.select-imitator input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+@media (max-width: 500px) {
+  section#quester div.quest-block div.input-block input,
+  section#quester div.quest-block div.input-block select,
+  section#quester div.quest-block div.input-block div.select-imitator input {
+    width: 80%;
+  }
+}
+section#quester div.quest-block div.input-block p,
+section#quester div.quest-block div.input-block label {
+  font-family: CalibriLight;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 350px) {
+  section#quester div.quest-block div.input-block p,
+  section#quester div.quest-block div.input-block label {
+    font-size: 14px;
+  }
+}
+section#quester div.quest-block div.input-block div.select-imitator {
+  position: relative;
+  width: 300px;
+  display: inline-block;
+  cursor: pointer;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 500px) {
+  section#quester div.quest-block div.input-block div.select-imitator {
+    width: 80%;
+  }
+}
+section#quester div.quest-block div.input-block div.select-imitator div.input-container {
+  position: relative;
+  width: 100%;
+}
+section#quester div.quest-block div.input-block div.select-imitator div.input-container input {
+  width: 100%;
+  cursor: pointer;
+  padding-right: 35px;
+}
+section#quester div.quest-block div.input-block div.select-imitator div.input-container img.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 1;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list {
+  border: 1px solid #00662e;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 7;
+  top: 38px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+@media (max-width: 600px) {
+  section#quester div.quest-block div.input-block div.select-imitator ul.list {
+    position: fixed;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 350px) {
+  section#quester div.quest-block div.input-block div.select-imitator ul.list {
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -100px;
+  }
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li {
+  display: block;
+  width: 100%;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li div.inactive {
+  background: #fff;
+  display: block;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px;
+  position: relative;
+  cursor: default;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li div.inactive p {
+  font-size: 14px;
+  font-family: CalibriBold;
+  display: inline-block;
+  padding-left: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span {
+  background: #fff;
+  display: block;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px;
+  position: relative;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span:hover {
+  background: #d3d3d3;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span p {
+  font-size: 14px;
+  font-family: Calibri;
+  display: inline-block;
+  padding-left: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span img.check {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  display: none;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span.active img.check {
+  display: block;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span div.circle {
+  position: relative;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 50px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span div.circle.red {
+  background-color: #f00;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span div.circle.blue {
+  background-color: #1871d0;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span div.circle.purple {
+  background-color: #800080;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span div.circle.orange {
+  background-color: #f19239;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span div.circle.green {
+  background-color: #008000;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li span div.circle.brown {
+  background-color: #a52a2a;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li.group span {
+  padding-left: 20px;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li.group span.header {
+  padding-left: 10px;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li.group span.header p {
+  font-weight: 700;
+}
+section#quester div.quest-block div.input-block div.select-imitator ul.list li.all span p {
+  font-weight: 700;
+}
+section#quester div.quest-block div.input-block div.select-imitator_simplify ul.list li span.active {
+  background-color: #e5e5e5;
+}
+section#quester div.quest-block div.input-block a.button {
+  height: 45px;
+  width: 60px;
+  display: inline-block;
+  background-color: #808080;
+  border-left: none;
+  cursor: pointer;
+  vertical-align: top;
+  position: relative;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+@media (max-width: 500px) {
+  section#quester div.quest-block div.input-block a.button {
+    width: 19%;
+  }
+}
+section#quester div.quest-block div.input-block a.button img {
+  position: absolute;
+  height: 20px;
+  width: 30px;
+  top: 0;
+  margin-top: 10px;
+  right: 50%;
+  margin-right: -15px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+section#quester div.quest-block div.input-block a.button img.loading {
+  display: none;
+}
+section#quester div.quest-block div.input-block a.button.active {
+  background-color: #00662e;
+}
+section#quester div.quest-block div.input-block a.button.active:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+section#quester div.quest-block div.input-block a.button.active:hover img {
+  margin-right: -20px;
+}
+section#offers {
+  text-align: center;
+  position: relative;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 850px) {
+  section#offers {
+    padding-top: 30px;
+  }
+}
+section#offers div.offers-header {
+  text-align: left;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  padding-top: 80px;
+}
+@media (max-width: 800px) and (min-width: 600px) {
+  section#offers div.offers-header {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 600px) and (min-width: 500px) {
+  section#offers div.offers-header {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+section#offers div.offers-header p {
+  font-size: 22px;
+  font-family: Trajan;
+  font-weight: 300;
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  section#offers div.offer-card-container div.offer-card:last-child {
+    display: none;
+  }
+}
+section#offers div.button-to-catalog {
+  margin-top: 15px;
+  text-align: center;
+}
+section#offers div.button-to-catalog a {
+  background-color: #00662e;
+  color: #fff;
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#offers div.button-to-catalog a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}

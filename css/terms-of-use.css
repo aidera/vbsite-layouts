@@ -1,0 +1,61 @@
+section#terms {
+  text-align: left;
+  position: relative;
+  padding-top: 70px;
+}
+@media (max-width: 850px) {
+  section#terms {
+    padding-top: 130px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  section#terms div.page-container {
+    width: 100%;
+  }
+}
+section#terms div.headers {
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  section#terms div.headers {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+section#terms div.headers * {
+  font-family: Trajan;
+  display: block;
+  width: 100%;
+}
+section#terms div.headers h1 {
+  font-weight: 200;
+  font-size: 36px;
+  margin-left: -2px;
+}
+section#terms div.headers h2 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+}
+section#terms div.terms-container {
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 80px;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  section#terms div.terms-container {
+    padding: 20px;
+  }
+}
+section#terms div.terms-container p {
+  font-family: CalibriLight;
+  font-size: 16px;
+  line-height: 20px;
+}
+section#terms div.terms-container p b {
+  font-family: CalibriBold;
+  font-size: 16px;
+}

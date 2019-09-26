@@ -1,0 +1,141 @@
+section#authorization {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  height: 100vh;
+  min-height: 650px;
+  text-align: center;
+}
+@media (max-width: 850px) {
+  section#authorization {
+    padding-top: 130px;
+  }
+}
+section#authorization div.auth-container {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 30px;
+  width: 400px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 500px) {
+  section#authorization div.auth-container {
+    width: 100%;
+  }
+}
+section#authorization div.auth-container div.bx-auth-title {
+  font-family: Trajan;
+  display: block;
+  width: 100%;
+  font-weight: 200;
+  font-size: 36px;
+}
+section#authorization div.auth-container div.undertitle {
+  font-family: Trajan;
+  display: block;
+  width: 100%;
+  font-weight: 200;
+  font-size: 18px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+section#authorization div.auth-container div.bx-auth-note {
+  color: #f17e73;
+  font-size: 16px;
+}
+section#authorization div.auth-container form {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+section#authorization div.auth-container form .bx-auth-label {
+  font-size: 16px;
+  padding-right: 30px;
+  font-family: CalibriLight;
+}
+section#authorization div.auth-container form .bx-auth-input {
+  display: block;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #00662e;
+  background-color: rgba(123,123,123,0.2);
+  padding: 12px 20px;
+  font-family: CalibriLight;
+  font-size: 16px;
+  color: #000;
+  width: 100%;
+  margin-bottom: 15px;
+}
+section#authorization div.auth-container form .bx-auth-input::-webkit-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#authorization div.auth-container form .bx-auth-input::-moz-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#authorization div.auth-container form .bx-auth-input:-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#authorization div.auth-container form .bx-auth-input::-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#authorization div.auth-container form .bx-auth-input::placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#authorization div.auth-container form div.remember {
+  text-align: left;
+}
+section#authorization div.auth-container form div.remember * {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+}
+section#authorization div.auth-container form div.remember input {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+section#authorization div.auth-container form div.remember label {
+  padding-top: 0px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+section#authorization div.auth-container form div.authorize-submit-cell {
+  margin-top: 20px;
+}
+section#authorization div.auth-container form div.authorize-submit-cell input {
+  color: #fff;
+  font-family: Trajan;
+  background-color: #00662e;
+  font-size: 14px;
+  padding: 14px 0;
+  margin-top: 0px;
+  font-weight: 300;
+  cursor: pointer;
+  width: 100%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#authorization div.auth-container form div.authorize-submit-cell input:hover {
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.2);
+}
+footer {
+  margin-top: -16vh;
+}

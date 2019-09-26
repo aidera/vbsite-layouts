@@ -1,0 +1,1146 @@
+div.select-imitator_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 6;
+  display: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+section#search {
+  padding-top: 70px;
+  position: relative;
+}
+@media (max-width: 850px) {
+  section#search {
+    padding-top: 130px;
+  }
+}
+section#search div.show-hide_catalog-search-form {
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 1px;
+}
+@media (max-width: 1400px) {
+  section#search div.show-hide_catalog-search-form {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  section#search div.show-hide_catalog-search-form {
+    width: 100%;
+    margin-bottom: 1px;
+  }
+}
+section#search div.show-hide_catalog-search-form span {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0;
+  width: 300px;
+}
+@media (max-width: 380px) {
+  section#search div.show-hide_catalog-search-form span {
+    width: 100%;
+  }
+}
+section#search div.show-hide_catalog-search-form span p {
+  font-family: CalibriLight;
+  display: inline-block;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+}
+@media (max-width: 500px) {
+  section#search div.show-hide_catalog-search-form span p {
+    font-size: 14px;
+  }
+}
+section#search div.show-hide_catalog-search-form span img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+section#search div.show-hide_catalog-search-form:hover span p {
+  border-bottom: 1px solid rgba(0,0,0,0);
+}
+section#search div.headers {
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  section#search div.headers {
+    width: 100%;
+  }
+}
+section#search div.headers * {
+  font-family: Trajan;
+  display: block;
+  width: 100%;
+}
+section#search div.headers h1 {
+  font-weight: 200;
+  font-size: 36px;
+  margin-left: -2px;
+}
+section#search div.headers h2 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+}
+section#search div#add-offer-button {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 45px;
+}
+@media (max-width: 1000px) {
+  section#search div#add-offer-button {
+    position: relative;
+    top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+section#search div#add-offer-button a {
+  color: #fff;
+  text-align: center;
+  font-family: Trajan;
+  background-color: #00662e;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-top: 0px;
+  font-weight: 300;
+  cursor: pointer;
+  width: 200px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#search div#add-offer-button a:hover {
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.2);
+}
+@media (max-width: 350px) {
+  section#search div#add-offer-button a {
+    width: 100%;
+  }
+}
+section#search form#catalog-search-form {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 20px 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: top;
+  display: block;
+  text-align: left;
+  -ms-user-select: none;
+      user-select: none;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 1400px) {
+  section#search form#catalog-search-form {
+    display: none;
+    -webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+  }
+}
+@media (max-width: 500px) {
+  section#search form#catalog-search-form {
+    width: 100%;
+  }
+}
+section#search form#catalog-search-form input,
+section#search form#catalog-search-form select,
+section#search form#catalog-search-form div.select-imitator input {
+  display: block;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  border: 1px solid #00662e;
+  background-color: rgba(123,123,123,0.2);
+  padding: 12px 20px;
+  font-family: CalibriLight;
+  font-size: 16px;
+  color: #000;
+}
+section#search form#catalog-search-form input::-webkit-input-placeholder,
+section#search form#catalog-search-form select::-webkit-input-placeholder,
+section#search form#catalog-search-form div.select-imitator input::-webkit-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#search form#catalog-search-form input::-moz-placeholder,
+section#search form#catalog-search-form select::-moz-placeholder,
+section#search form#catalog-search-form div.select-imitator input::-moz-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#search form#catalog-search-form input:-ms-input-placeholder,
+section#search form#catalog-search-form select:-ms-input-placeholder,
+section#search form#catalog-search-form div.select-imitator input:-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#search form#catalog-search-form input::-ms-input-placeholder,
+section#search form#catalog-search-form select::-ms-input-placeholder,
+section#search form#catalog-search-form div.select-imitator input::-ms-input-placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#search form#catalog-search-form input::placeholder,
+section#search form#catalog-search-form select::placeholder,
+section#search form#catalog-search-form div.select-imitator input::placeholder {
+  color: #3c3c3c;
+  opacity: 0.6;
+}
+section#search form#catalog-search-form p,
+section#search form#catalog-search-form label {
+  font-family: CalibriLight;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 350px) {
+  section#search form#catalog-search-form p,
+  section#search form#catalog-search-form label {
+    font-size: 14px;
+  }
+}
+section#search form#catalog-search-form div.select-imitator {
+  position: relative;
+  width: 260px;
+  cursor: pointer;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+@media (max-width: 1100px) {
+  section#search form#catalog-search-form div.select-imitator {
+    width: 100%;
+  }
+}
+section#search form#catalog-search-form div.select-imitator div.input-container {
+  position: relative;
+  width: 100%;
+}
+section#search form#catalog-search-form div.select-imitator div.input-container input {
+  width: 100%;
+  cursor: pointer;
+  padding-right: 35px;
+}
+section#search form#catalog-search-form div.select-imitator div.input-container img.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  opacity: 1;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+section#search form#catalog-search-form div.select-imitator ul.list {
+  border: 1px solid #00662e;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 7;
+  top: 38px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+@media (max-width: 600px) {
+  section#search form#catalog-search-form div.select-imitator ul.list {
+    position: fixed;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 350px) {
+  section#search form#catalog-search-form div.select-imitator ul.list {
+    width: 300px;
+    margin-left: -150px;
+    margin-top: -100px;
+  }
+}
+section#search form#catalog-search-form div.select-imitator ul.list li {
+  display: block;
+  width: 100%;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li div.inactive {
+  background: #fff;
+  display: block;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px;
+  position: relative;
+  cursor: default;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li div.inactive p {
+  font-size: 14px;
+  font-family: CalibriBold;
+  display: inline-block;
+  padding-left: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span {
+  background: #fff;
+  display: block;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  padding: 10px;
+  position: relative;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span:hover {
+  background: #d3d3d3;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span p {
+  font-size: 14px;
+  font-family: Calibri;
+  display: inline-block;
+  padding-left: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span img.check {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  top: 7px;
+  display: none;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span.active img.check {
+  display: block;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span div.circle {
+  position: relative;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-left: 50px;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span div.circle.red {
+  background-color: #f00;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span div.circle.blue {
+  background-color: #1871d0;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span div.circle.purple {
+  background-color: #800080;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span div.circle.orange {
+  background-color: #f19239;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span div.circle.green {
+  background-color: #008000;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li span div.circle.brown {
+  background-color: #a52a2a;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li.group span {
+  padding-left: 20px;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li.group span.header {
+  padding-left: 10px;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li.group span.header p {
+  font-weight: 700;
+}
+section#search form#catalog-search-form div.select-imitator ul.list li.all span p {
+  font-weight: 700;
+}
+section#search form#catalog-search-form div.select-imitator_simplify ul.list li span.active {
+  background-color: #e5e5e5;
+}
+section#search form#catalog-search-form div#metro-select-imitator ul.list li.group span {
+  padding-left: 10px;
+}
+section#search form#catalog-search-form div#metro-select-imitator ul.list li.group span p {
+  padding-left: 5px;
+}
+section#search form#catalog-search-form div#metro-select-imitator ul.list li.group span.header {
+  padding-left: 0px;
+}
+section#search form#catalog-search-form div.search-group {
+  text-align: left;
+  display: inline-block;
+  vertical-algn: top;
+  margin-bottom: 10px;
+  width: 375px;
+}
+section#search form#catalog-search-form div.search-group div.select-imitator {
+  width: 100%;
+}
+section#search form#catalog-search-form div.search-group input {
+  width: 100%;
+}
+section#search form#catalog-search-form div.fastsearch {
+  width: 375px;
+  margin-right: 14px;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.fastsearch {
+    width: 420px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.fastsearch {
+    width: 320px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  section#search form#catalog-search-form div.fastsearch {
+    width: 275px;
+    margin-right: 6px;
+  }
+}
+@media (max-width: 850px) {
+  section#search form#catalog-search-form div.fastsearch {
+    width: 300px;
+    margin-right: 6px;
+  }
+}
+@media (max-width: 700px) {
+  section#search form#catalog-search-form div.fastsearch {
+    width: 100%;
+    margin-right: 0;
+    display: block;
+  }
+}
+section#search form#catalog-search-form div.category {
+  position: relative;
+  width: 375px;
+  margin-right: 14px;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.category {
+    width: 420px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.category {
+    width: 320px;
+  }
+}
+@media (max-width: 1000px) {
+  section#search form#catalog-search-form div.category {
+    width: 275px;
+  }
+}
+@media (max-width: 850px) {
+  section#search form#catalog-search-form div.category {
+    width: 300px;
+  }
+}
+@media (max-width: 700px) {
+  section#search form#catalog-search-form div.category {
+    width: 100%;
+    margin-right: 0;
+    display: block;
+  }
+}
+section#search form#catalog-search-form div.subcategory {
+  position: relative;
+  width: 375px;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.subcategory {
+    width: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.subcategory {
+    width: 100%;
+    display: inline-block;
+  }
+}
+section#search form#catalog-search-form div.subcategory div.disable {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+section#search form#catalog-search-form div.metro {
+  position: relative;
+  width: 375px;
+  margin-right: 14px;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.metro {
+    width: 420px;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.metro {
+    width: 320px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  section#search form#catalog-search-form div.metro {
+    width: 275px;
+    margin-right: 6px;
+  }
+}
+@media (max-width: 850px) {
+  section#search form#catalog-search-form div.metro {
+    width: 300px;
+    margin-right: 6px;
+  }
+}
+@media (max-width: 700px) {
+  section#search form#catalog-search-form div.metro {
+    width: 100%;
+    margin-right: 0;
+    display: block;
+  }
+}
+section#search form#catalog-search-form div.tenure {
+  position: relative;
+  width: 375px;
+  margin-right: 14px;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.tenure {
+    width: 420px;
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.tenure {
+    width: 320px;
+  }
+}
+@media (max-width: 1000px) {
+  section#search form#catalog-search-form div.tenure {
+    width: 275px;
+  }
+}
+@media (max-width: 850px) {
+  section#search form#catalog-search-form div.tenure {
+    width: 300px;
+  }
+}
+@media (max-width: 700px) {
+  section#search form#catalog-search-form div.tenure {
+    width: 100%;
+    display: block;
+  }
+}
+section#search form#catalog-search-form div.income,
+section#search form#catalog-search-form div.cost {
+  width: 375px;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.income,
+  section#search form#catalog-search-form div.cost {
+    width: 420px;
+  }
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.income,
+  section#search form#catalog-search-form div.cost {
+    width: 320px;
+  }
+}
+@media (max-width: 1000px) {
+  section#search form#catalog-search-form div.income,
+  section#search form#catalog-search-form div.cost {
+    width: 275px;
+  }
+}
+@media (max-width: 850px) {
+  section#search form#catalog-search-form div.income,
+  section#search form#catalog-search-form div.cost {
+    width: 300px;
+  }
+}
+@media (max-width: 700px) {
+  section#search form#catalog-search-form div.income,
+  section#search form#catalog-search-form div.cost {
+    width: 100%;
+    display: block;
+  }
+}
+section#search form#catalog-search-form div.income div,
+section#search form#catalog-search-form div.cost div {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+section#search form#catalog-search-form div.income input,
+section#search form#catalog-search-form div.cost input {
+  width: 45%;
+  display: inline-block;
+}
+section#search form#catalog-search-form div.income span,
+section#search form#catalog-search-form div.cost span {
+  display: block;
+  position: absolute;
+  width: 20px;
+  text-align: center;
+  top: 15px;
+  left: 50%;
+  margin-left: -10px;
+}
+section#search form#catalog-search-form div.income {
+  margin-right: 0;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.income {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.income {
+    margin-right: 16px;
+  }
+}
+@media (max-width: 1000px) {
+  section#search form#catalog-search-form div.income {
+    margin-right: 6px;
+  }
+}
+@media (max-width: 700px) {
+  section#search form#catalog-search-form div.income {
+    margin-right: 0;
+  }
+}
+section#search form#catalog-search-form div.cost {
+  margin-right: 14px;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.cost {
+    margin-right: 0px;
+  }
+}
+section#search form#catalog-search-form div.checkbox {
+  width: 300px;
+  vertical-align: bottom;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.checkbox {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px) {
+  section#search form#catalog-search-form div.checkbox {
+    width: 100%;
+    margin-right: 0;
+    display: block;
+  }
+}
+section#search form#catalog-search-form div.checkbox * {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+}
+section#search form#catalog-search-form div.checkbox input {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+section#search form#catalog-search-form div.checkbox label {
+  padding-top: 2px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+}
+section#search form#catalog-search-form div.buttons {
+  width: 464px;
+  text-align: right;
+}
+@media (max-width: 1500px) {
+  section#search form#catalog-search-form div.buttons {
+    width: 555px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.buttons {
+    width: 355px;
+  }
+}
+@media (max-width: 1000px) {
+  section#search form#catalog-search-form div.buttons {
+    width: 100%;
+    text-align: center;
+  }
+}
+section#search form#catalog-search-form div.buttons a.clear-filters {
+  border-bottom: 1px solid;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 40px;
+}
+section#search form#catalog-search-form div.buttons a.clear-filters:hover {
+  border-bottom: 1px solid rgba(255,255,255,0);
+}
+@media (max-width: 1200px) {
+  section#search form#catalog-search-form div.buttons a.clear-filters {
+    margin-right: 25px;
+  }
+}
+@media (max-width: 500px) {
+  section#search form#catalog-search-form div.buttons a.clear-filters {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+section#search form#catalog-search-form div.buttons button {
+  color: #fff;
+  font-family: Trajan;
+  background-color: #00662e;
+  font-size: 14px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-top: 0px;
+  font-weight: 300;
+  cursor: pointer;
+  width: 200px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#search form#catalog-search-form div.buttons button:hover {
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 7px 3px rgba(0,0,0,0.2);
+}
+@media (max-width: 500px) {
+  section#search form#catalog-search-form div.buttons button {
+    width: 100%;
+  }
+}
+section#offers {
+  text-align: center;
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+@media (max-width: 1400px) {
+  section#offers {
+    padding-top: 10px;
+  }
+}
+section#offers div.offer-card-container_sorting-block {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 10px 20px;
+  position: relative;
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  text-align: left;
+}
+@media (max-width: 600px) {
+  section#offers div.offer-card-container_sorting-block {
+    width: 100%;
+    text-align: center;
+  }
+}
+section#offers div.offer-card-container_sorting-block p {
+  font-family: CalibriLight;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  margin-right: 25px;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section#offers div.offer-card-container_sorting-block p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding-top: 0;
+  }
+}
+@media (max-width: 400px) {
+  section#offers div.offer-card-container_sorting-block p {
+    margin-right: 0px;
+  }
+}
+section#offers div.offer-card-container_sorting-block div.select {
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+}
+section#offers div.offer-card-container_sorting-block div.select img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+@media (max-width: 350px) {
+  section#offers div.offer-card-container_sorting-block div.select img {
+    right: 10px;
+  }
+}
+section#offers div.offer-card-container_sorting-block div.select span {
+  display: inline-block;
+  border: 1px solid #00662e;
+  background-color: rgba(123,123,123,0.2);
+  padding: 10px;
+  padding-right: 20px;
+  vertical-align: middle;
+  color: #000;
+  font-family: CalibriLight;
+  font-size: 16px;
+  width: 230px;
+  cursor: pointer;
+  overflow: hidden;
+}
+@media (max-width: 350px) {
+  section#offers div.offer-card-container_sorting-block div.select span {
+    width: 95%;
+    padding-right: 20px;
+  }
+}
+section#offers div.offer-card-container_sorting-block div.select div.list {
+  position: absolute;
+  display: none;
+  top: 35px;
+  border: 1px solid #00662e;
+  z-index: 7;
+}
+@media (max-width: 600px) {
+  section#offers div.offer-card-container_sorting-block div.select div.list {
+    position: fixed;
+    width: 350px;
+    left: 50%;
+    margin-left: -175px;
+    top: 50%;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 350px) {
+  section#offers div.offer-card-container_sorting-block div.select div.list {
+    width: 300px;
+    margin-left: -150px;
+  }
+}
+section#offers div.offer-card-container_sorting-block div.select div.list a {
+  display: block;
+  width: 228px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #fff;
+  font-family: Calibri;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  section#offers div.offer-card-container_sorting-block div.select div.list a {
+    width: 100%;
+  }
+}
+section#offers div.offer-card-container_sorting-block div.select div.list a:hover {
+  background-color: #d3d3d3;
+}
+section#offers div.offer-card-container_top-pagination {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+@media (max-width: 1200px) {
+  section#offers div.offer-card-container_top-pagination {
+    display: none;
+  }
+}
+section#offers div.offer-card-container_top-pagination a,
+section#offers div.offer-card-container_top-pagination p {
+  font-family: CalibriLight;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+}
+section#offers div.offer-card-container_top-pagination p {
+  cursor: default;
+}
+section#offers div.offer-card-container_top-pagination a {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+section#offers div.offer-card-container_top-pagination a.prev {
+  margin-right: 20px;
+}
+section#offers div.offer-card-container_top-pagination a.next {
+  margin-left: 20px;
+}
+section#offers div.offer-card-container_top-pagination a:hover {
+  background-color: #d3d3d3;
+}
+section#offers div.offer-card-container_top-pagination a.active {
+  font-weight: 600;
+  color: #00662e;
+}
+section#offers div.bottom-blocks {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+section#offers div.offer-card-container_show-more {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+}
+@media (max-width: 1200px) {
+  section#offers div.offer-card-container_show-more {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  section#offers div.offer-card-container_show-more {
+    width: 90%;
+  }
+}
+section#offers div.offer-card-container_show-more a {
+  font-family: Trajan;
+  font-size: 14px;
+  display: block;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  background-color: #00662e;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#offers div.offer-card-container_show-more a:hover {
+  letter-spacing: 1px;
+}
+section#offers div.offer-card-container_show-more img.loading {
+  margin: 0 auto;
+  display: block;
+  height: 55px;
+  width: 55px;
+}
+@media (max-width: 1200px) {
+  section#offers div.offer-card-container_show-more img.loading {
+    height: 55px;
+    width: 55px;
+  }
+}
+section#offers div.offer-card-container_bottom-pagination {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section#offers div.offer-card-container_bottom-pagination {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  section#offers div.offer-card-container_bottom-pagination {
+    padding: 15px;
+    padding-bottom: 55px;
+  }
+}
+section#offers div.offer-card-container_bottom-pagination a,
+section#offers div.offer-card-container_bottom-pagination p {
+  font-family: CalibriLight;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+}
+section#offers div.offer-card-container_bottom-pagination p {
+  cursor: default;
+}
+section#offers div.offer-card-container_bottom-pagination a {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+section#offers div.offer-card-container_bottom-pagination a.prev {
+  margin-right: 20px;
+}
+@media (max-width: 500px) {
+  section#offers div.offer-card-container_bottom-pagination a.prev {
+    margin-right: 10px;
+  }
+}
+section#offers div.offer-card-container_bottom-pagination a.next {
+  margin-left: 20px;
+}
+@media (max-width: 500px) {
+  section#offers div.offer-card-container_bottom-pagination a.next {
+    margin-right: 10px;
+  }
+}
+section#offers div.offer-card-container_bottom-pagination a:hover {
+  background-color: #d3d3d3;
+}
+section#offers div.offer-card-container_bottom-pagination a.active {
+  font-weight: 600;
+  color: #00662e;
+}
+@media (max-width: 500px) {
+  section#offers div.offer-card-container_bottom-pagination a.prev {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -100px;
+  }
+  section#offers div.offer-card-container_bottom-pagination a.next {
+    position: absolute;
+    top: 55px;
+    right: 50%;
+    margin-right: -100px;
+  }
+}
+section#recomended {
+  margin-top: 30px;
+}
+section#recomended div.offers-header {
+  text-align: left;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) and (min-width: 600px) {
+  section#recomended div.offers-header {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 600px) and (min-width: 500px) {
+  section#recomended div.offers-header {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+section#recomended div.offers-header p {
+  font-size: 22px;
+  font-family: Trajan;
+  font-weight: 300;
+}
+@media (max-width: 1500px) and (min-width: 1200px) {
+  section#recomended div.offer-card-container div.offer-card:last-child {
+    display: none;
+  }
+}

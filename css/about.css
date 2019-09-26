@@ -1,0 +1,655 @@
+section#general {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+section#general div.background {
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+section#general div.background.small {
+  background-image: url("../img/pages/about-small.jpg");
+}
+section#general div.background.normal {
+  background-image: url("../img/pages/about.jpg") !important;
+}
+section#general div.gradient {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0px;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c1e2a), color-stop(60%), to(rgba(28,30,42,0)));
+  background: -webkit-linear-gradient(top, #1c1e2a, 60%, rgba(28,30,42,0));
+  background: -o-linear-gradient(top, #1c1e2a, 60%, rgba(28,30,42,0));
+  background: linear-gradient(to bottom, #1c1e2a, 60%, rgba(28,30,42,0));
+  opacity: 0.8;
+}
+section#about {
+  position: relative;
+  width: 100%;
+}
+section#about >div.content {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  background-color: #fff;
+  padding-bottom: 100px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+section#about >div.content div.logo-block {
+  position: relative;
+}
+section#about >div.content div.logo-block >div.logo {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  background-color: #1c1e2a;
+  border: 7px solid #fff;
+  -webkit-border-radius: 150px;
+          border-radius: 150px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  margin-top: -100px;
+}
+section#about >div.content div.logo-block >div.logo div.img {
+  position: absolute;
+  width: 180px;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  margin-left: -90px;
+  margin-top: -80px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  pointer-events: none;
+  background-image: url("../img/logo-color.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+section#about >div.content div.logo-block div.slogan p {
+  color: #fff;
+  font-family: Trajan;
+  display: block;
+  width: 150px;
+  display: block;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  font-size: 16px;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.logo-block div.slogan p {
+    top: -225px;
+  }
+}
+section#about >div.content div.logo-block div.slogan p.slogan1 {
+  margin-left: -300px;
+  text-align: right;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.logo-block div.slogan p.slogan1 {
+    margin-left: -75px;
+    text-align: center;
+  }
+}
+section#about >div.content div.logo-block div.slogan p.slogan2 {
+  margin-left: 150px;
+  text-align: left;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.logo-block div.slogan p.slogan2 {
+    margin-left: -75px;
+    text-align: center;
+    top: -200px;
+  }
+}
+section#about >div.content div.logo-block div.slogan p.slogan3 {
+  margin-left: -300px;
+  text-align: right;
+  top: -35px;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.logo-block div.slogan p.slogan3 {
+    margin-left: -75px;
+    text-align: center;
+    top: -175px;
+  }
+}
+section#about >div.content div.logo-block div.slogan p.slogan4 {
+  margin-left: 150px;
+  text-align: left;
+  top: -35px;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.logo-block div.slogan p.slogan4 {
+    margin-left: -75px;
+    text-align: center;
+    top: -150px;
+  }
+}
+section#about >div.content div.contacts {
+  position: relative;
+  text-align: center;
+  margin-top: -100px;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.contacts {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+section#about >div.content div.contacts div.left-part,
+section#about >div.content div.contacts div.right-part {
+  display: inline-block;
+  width: 250px;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.contacts div.left-part,
+  section#about >div.content div.contacts div.right-part {
+    width: 100%;
+    max-width: 250px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+section#about >div.content div.contacts p {
+  position: relative;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.contacts p {
+    padding-left: 30px;
+    max-width: 240px;
+    text-align: left;
+    display: block;
+  }
+}
+section#about >div.content div.contacts p a {
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid #000;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+section#about >div.content div.contacts p a:hover {
+  border-bottom: 1px solid #fff;
+}
+section#about >div.content div.contacts p img {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.contacts p img {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+}
+section#about >div.content div.contacts div.left-part {
+  margin-right: 150px;
+  text-align: right;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.contacts div.left-part {
+    margin-right: 0;
+    text-align: left;
+  }
+}
+section#about >div.content div.contacts div.left-part img {
+  margin-left: 10px;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.contacts div.left-part img {
+    margin-left: 0;
+  }
+}
+section#about >div.content div.contacts div.right-part {
+  margin-left: 150px;
+  text-align: left;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.contacts div.right-part {
+    margin-left: 0;
+    text-align: left;
+  }
+}
+section#about >div.content div.contacts div.right-part img {
+  margin-right: 10px;
+}
+@media (max-width: 850px) {
+  section#about >div.content div.contacts div.right-part img {
+    margin-right: 0;
+  }
+}
+section#about >div.content div.text {
+  margin-top: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+@media (max-width: 900px) {
+  section#about >div.content div.text {
+    margin-top: 50px;
+  }
+}
+section#about >div.content div.text p,
+section#about >div.content div.text b {
+  font-size: 16px;
+  text-align: left;
+  line-height: 20px;
+}
+section#about >div.content div.text b {
+  font-family: CalibriBold;
+}
+section#about >div.content div.text div.left-part,
+section#about >div.content div.text div.right-part {
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  section#about >div.content div.text div.left-part,
+  section#about >div.content div.text div.right-part {
+    width: 500px;
+  }
+}
+@media (max-width: 520px) {
+  section#about >div.content div.text div.left-part,
+  section#about >div.content div.text div.right-part {
+    width: 100%;
+    padding: 0 30px;
+  }
+}
+section#about >div.content div.text div.left-part {
+  margin-right: 20px;
+}
+@media (max-width: 1200px) {
+  section#about >div.content div.text div.left-part {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+section#about >div.content div.text div.right-part {
+  margin-left: 20px;
+}
+@media (max-width: 1200px) {
+  section#about >div.content div.text div.right-part {
+    margin-left: 0;
+  }
+}
+section#about >div.content div.labels {
+  padding-top: 60px;
+  width: 850px;
+  display: inline-block;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  section#about >div.content div.labels {
+    width: 520px;
+  }
+}
+@media (max-width: 550px) {
+  section#about >div.content div.labels {
+    width: 100%;
+  }
+}
+section#about >div.content div.labels ul {
+  padding: 0;
+}
+section#about >div.content div.labels ul li {
+  display: inline-block;
+  width: 32%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: top;
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  section#about >div.content div.labels ul li {
+    width: 49%;
+  }
+}
+@media (max-width: 350px) {
+  section#about >div.content div.labels ul li {
+    width: 100%;
+  }
+}
+section#about >div.content div.labels ul li img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+section#about >div.content div.labels ul li b,
+section#about >div.content div.labels ul li p {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+section#about >div.content div.labels ul li p {
+  display: inline-block;
+  text-align: center;
+  font-family: Calibri;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px;
+  margin: 0;
+  max-width: 300px;
+}
+section#about >div.content div.labels ul li b {
+  display: block;
+  font-family: CalibriBold;
+  font-size: 16px;
+  line-height: 24px;
+}
+section#about >div.content div.button {
+  padding-top: 50px;
+}
+section#about >div.content div.button a {
+  font-size: 16px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #00662e;
+  color: #fff;
+  font-family: Trajan;
+  font-size: 16px;
+  padding: 20px 0;
+  width: 220px;
+  display: inline-block;
+}
+section#about >div.content div.button a:hover {
+  letter-spacing: 0.5px;
+}
+section#workers {
+  min-height: 700px;
+  position: relative;
+  width: 100%;
+  background-color: #1c1e2a;
+  overflow: hidden;
+}
+section#workers div#room-background div.img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.2;
+  -webkit-transition: ease-out 3s;
+  -o-transition: ease-out 3s;
+  transition: ease-out 3s;
+  background-image: url("../img/pages/room-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center 50%;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+section#workers h2 {
+  font-family: Trajan;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding-top: 120px;
+}
+@media (max-width: 1200px) {
+  section#workers h2 {
+    padding-top: 100px;
+  }
+}
+section#workers div.workers-container {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+@media (max-width: 1200px) {
+  section#workers div.workers-container {
+    padding-top: 50px;
+    width: 100% !important;
+  }
+}
+section#workers div.workers-container a.worker {
+  display: inline-block;
+  position: relative;
+  background-color: #1c1e2a;
+  width: 350px;
+  height: 500px;
+  z-index: 1;
+  margin: 0 20px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  section#workers div.workers-container a.worker {
+    margin: 0 5px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  section#workers div.workers-container a.worker {
+    width: 350px;
+  }
+}
+@media (max-width: 370px) {
+  section#workers div.workers-container a.worker {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+section#workers div.workers-container a.worker div.img-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-colro: #1c1e2a;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+section#workers div.workers-container a.worker div.img-block div.image {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+section#workers div.workers-container a.worker div.text-block {
+  position: absolute;
+  background-color: #1c1e2a;
+  width: 100%;
+  height: auto;
+  max-height: 130px;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+section#workers div.workers-container a.worker div.text-block * {
+  color: #fff;
+}
+section#workers div.workers-container a.worker div.text-block h3 {
+  font-family: Trajan;
+  font-size: 16px;
+}
+section#workers div.workers-container a.worker div.text-block b {
+  font-family: Calibri;
+}
+section#workers div.workers-container a.worker div.text-block p {
+  padding-top: 15px;
+  text-align: left;
+}
+section#workers div.workers-container a.worker div.text-block div.overflow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(28,30,42,0)), color-stop(80%, #1c1e2a));
+  background: -webkit-linear-gradient(top, rgba(28,30,42,0) 0%, #1c1e2a 80%);
+  background: -o-linear-gradient(top, rgba(28,30,42,0) 0%, #1c1e2a 80%);
+  background: linear-gradient(to bottom, rgba(28,30,42,0) 0%, #1c1e2a 80%);
+}
+section#workers div.workers-container a.worker:hover div.img-block div.image {
+  height: 90%;
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 1;
+}
+section#workers div.workers-container a.worker:hover div.text-block {
+  max-height: 80%;
+}
+section#workers div.workers-container a.worker:hover div.text-block div.overflow {
+  height: 40px;
+}
+section#partners {
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+@media (max-width: 850px) {
+  section#partners {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+section#partners h2 {
+  font-family: Trajan;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+section#partners div.partners-container {
+  text-align: center;
+}
+section#partners div.partners-container a {
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  margin: 5px 15px;
+  position: relative;
+}
+@media (max-width: 350px) {
+  section#partners div.partners-container a {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+section#partners div.partners-container a div.img {
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+section#partners div.partners-container a:hover div.img {
+  opacity: 1;
+}
+section#other {
+  padding-bottom: 120px;
+}
+section#other h2 {
+  font-size: 22px;
+  font-family: Trajan;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+section#other div.articles-container {
+  padding-top: 100px;
+}
+section#other div.articles-container section#articles-section {
+  padding-top: 0px;
+}
+@media (max-width: 600px) {
+  section#other div.articles-container section#articles-section div.page-container {
+    width: 100% !important;
+  }
+}
+section#other div.review-container {
+  padding-top: 0px;
+}
+section#other div.look-more {
+  margin-top: 20px;
+  text-align: center;
+}
+section#other div.look-more a {
+  background-color: #00662e;
+  color: #fff;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  font-family: Trajan;
+  font-size: 14px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#other div.look-more a:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+          box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  letter-spacing: 0.5px;
+}
+footer {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}

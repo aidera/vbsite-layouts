@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" name="" content="">
+    <meta name="keywords" content="Добавить объект">
+    <meta name="description" content="Добавить объект">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Готовый бизнес vbiznese.ru">
+    <meta property="og:title" content="Добавить объект - ВБИЗНЕСЕ">
+    <meta property="og:description" content="Добавить объект - ВБИЗНЕСЕ">
+    <meta property="og:url" content="|!TODO: вставить текущий адрес страницы!|">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="|!TODO: вставить путь к картинке ./img/og-img.png !|">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <title>Добавить объект - ВБИЗНЕСЕ</title>
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <link href="./css/popup-form.css" rel="stylesheet" type="text/css">
+    <link href="./css/menu-admin.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+    <link href="./css/add-offer.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <script src="./libs/jquery/dist/jquery.mask.min.js" type="text/javascript"></script>
+    <script src="./libs/form-gb/form-gb.js" type="text/javascript"></script><!-- Если брокер, то подключается admin-script, иначе script -->
+    <script src="./js/admin-script.js"></script>
+    <script src="./js/add-offer.js"></script>
+  </head>
+  <body><!-- Если брокер, то подключается menu-admin, иначе menu-simple -->
+    <header>
+      <div id="menu-admin-desktop">
+        <div class="logo"><a href="./index.html"><img src="./img/logo-color.svg"></a></div><span class="header">Кабинет брокера</span>
+        <nav>
+          <div><a href="./index.html"><img class="main" src="./img/icons/home.svg">
+              <p>Обзор</p></a></div>
+          <div><a href="./index.html"><img class="main" src="./img/icons/search.svg">
+              <p>Парсер</p></a></div>
+          <div><a href="./catalog.html"><img class="main" src="./img/icons/bag.svg">
+              <p>Аудиты</p><img class="arrow" src="./img/icons/arrow-right.svg">
+              <div class="levels">
+                <div class="level-one">
+                  <div><a href="./catalog.html">
+                      <p>+ Добавить аудит</p></a></div>
+                  <div><a href="./catalog.html">
+                      <p>Мои аудиты</p></a></div>
+                  <div><a href="./catalog.html">
+                      <p>Все аудиты</p></a></div>
+                  <div><a href="./catalog.html">
+                      <p>Ожидающие аудита / непрошли аудит</p></a></div>
+                  <div><a href="./catalog.html">
+                      <p>Взятые на аудит</p></a></div>
+                  <div><a href="./catalog.html">
+                      <p>Ожидающие проверку</p></a></div>
+                </div>
+              </div></a></div>
+          <div><a href="./services.html"><img class="main" src="./img/icons/gift.svg">
+              <p>Объекты</p><img class="arrow" src="./img/icons/arrow-right.svg">
+              <div class="levels">
+                <div class="level-one">
+                  <div><a href="./catalog.html">
+                      <p>+ Добавить объект</p></a></div>
+                  <div><a href="./catalog.html">
+                      <p>Мои объекты</p></a></div>
+                  <div><a href="./catalog.html">
+                      <p>Все объекты</p></a></div>
+                </div>
+              </div></a></div>
+        </nav>
+        <div class="bottom-part"><a href="/"><img class="arrow" src="./img/icons/arrow-right.svg">
+            <p>Вернуться на сайт</p></a></div>
+      </div>
+      <div id="menu-admin-mobile">
+        <div class="menu-admin-mobile_overlay"></div>
+        <div class="top-line"><a class="button menu-admin-mobile_show-menu-block"><img src="img/icons/menu.svg" alt=""></a><a class="logo" href="/index.html">
+            <p>ВБИЗНЕСЕ</p></a></div>
+        <div class="menu-block">
+          <div class="logo"><a href="/index.html">
+              <p>ВБИЗНЕСЕ</p></a></div><span class="header">Кабинет брокера</span>
+          <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+            <div><a href="./index.html"><img class="main" src="./img/icons/home.svg">
+                <p>Обзор</p></a></div>
+            <div><a href="./index.html"><img class="main" src="./img/icons/search.svg">
+                <p>Парсер</p></a></div>
+            <div><a href="./catalog.html"><img class="main" src="./img/icons/bag.svg">
+                <p>Аудиты</p></a></div>
+            <div><a href="./services.html"><img class="main" src="./img/icons/gift.svg">
+                <p>Объекты</p></a></div>
+          </nav>
+          <div class="bottom-part"><a href="/"><img class="arrow" src="./img/icons/arrow-right.svg">
+              <p>Вернуться на сайт</p></a></div>
+        </div>
+      </div>
+    </header>
+    <div id="submit-your-application">
+      <div class="submit-your-application_overlay submit-your-application_close"></div>
+      <form form-gb-page="|!TODO: адрес текущей страницы!|" form-gb-desc="popup-form">
+        <div class="close_div"><img class="close submit-your-application_close" src="./img/icons/close.svg" alt="Закрыть"></div>
+        <div class="header">
+          <p>Оставить заявку</p>
+        </div>
+        <div class="errors form-gb_errors"></div>
+        <input class="form-gb_input-name" type="text" placeholder="Как к Вам обращаться?*">
+        <input class="form-gb_input-phone" type="text" placeholder="Ваш телефонный номер*">
+        <textarea class="form-gb_input-comment" type="text" placeholder="Что Вас интересует?"></textarea>
+        <div class="checkbox">
+          <input class="form-gb-checkbox" id="menu_form-gb-checkbox" type="checkbox" name="form-gb-checkbox" checked>
+          <label for="menu_form-gb-checkbox">Я даю согласие на обработку персональных данных по условиям <a href="./terms-of-use.html">пользовательского соглашения</a></label>
+        </div>
+        <div class="form-button_div"><a class="form-button form-gb_button">Отправить</a></div>
+        <div class="loading form-gb_loading"><img src="./img/icons/loading-green.svg" alt="Загрузка"></div>
+      </form>
+    </div>
+    <div class="select-imitator_overlay"></div>
+    <section id="add-offer">
+      <div class="page-container">
+        <div class="headers">
+          <h1>Добавить объект</h1>
+        </div>
+        <div class="content-block">
+          <div class="before_header-tabs-desktop"></div>
+          <div id="header-tabs-desktop">
+            <ul><!-- Пункт "Модерация" только для сотрудников -->
+              <li class="active"><a class="scrollto" href="#part-0"> <img src="./img/icons/star.svg" alt="Модерация">
+                  <p>Модерация</p></a></li>
+              <li><a class="scrollto" href="#part-1"><img src="./img/icons/user.svg" alt="Информация о владельце">
+                  <p>Информация о владельце</p></a></li>
+              <li><a class="scrollto" href="#part-2"> <img src="./img/icons/bag.svg" alt="Основная информация">
+                  <p>Основная информация</p></a></li>
+              <li><a class="scrollto" href="#part-3"> <img src="./img/icons/home.svg" alt="Помещение и расположение">
+                  <p>Помещение и расположение</p></a></li>
+              <li><a class="scrollto" href="#part-4"> <img src="./img/icons/harddrives.svg" alt="Оборудование">
+                  <p>Оборудование</p></a></li>
+              <li><a class="scrollto" href="#part-5"> <img src="./img/icons/users.svg" alt="Персонал">
+                  <p>Персонал</p></a></li>
+              <li><a class="scrollto" href="#part-6"> <img src="./img/icons/announcement.svg" alt="Реклама">
+                  <p>Реклама</p></a></li>
+              <li><a class="scrollto" href="#part-7"> <img src="./img/icons/money.svg" alt="Финансы">
+                  <p>Финансы</p></a></li>
+              <li><a class="scrollto" href="#part-8"><img src="./img/icons/gallery.svg" alt="Фотографии">
+                  <p>Фотографии</p></a></li>
+              <li><a class="scrollto" href="#part-9"><img src="./img/icons/panel.svg" alt="Дополнительно">
+                  <p>Дополнительно</p></a></li>
+            </ul>
+          </div>
+          <div id="content"><!-- Блок "Модерация" только для сотрудников -->
+            <div class="part part-moderation" id="part-0">
+              <div class="header">
+                <h2>Модерация</h2>
+              </div>
+              <div class="inputs">
+                <div class="group">
+                  <label for="part-moderation-active">Видимость на сайте</label>
+                  <div class="switch-btn" id="part-moderation-active">
+                    <p class="switch-btn-notes true">Да</p>
+                    <p class="switch-btn-notes false">Нет</p>
+                    <input class="hiddeninput" type="hidden" name="part-moderation-active" value="true">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-moderation-status">Статус объекта</label>
+                  <div class="radio-imitator" id="part-moderation-status">
+                    <div class="list"><a param-value="param-1">новый</a><a param-value="param-2">объект</a><a param-value="param-3">на паузе</a><a param-value="param-4">продан</a></div>
+                    <input class="hiddeninput" type="hidden" name="part-form_status" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-moderation-recommend">Добавить в рекомендованное?</label>
+                  <div class="switch-btn" id="part-moderation-recommend">
+                    <p class="switch-btn-notes true">Да</p>
+                    <p class="switch-btn-notes false">Нет</p>
+                    <input class="hiddeninput" type="hidden" name="part-moderation-recommend" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-moderation-broker">Брокер</label>
+                  <div class="select-imitator select-imitator_simplify" id="part-moderation-broker">
+                    <div class="input-container" id="part-moderation-broker_container">
+                      <input type="text" disabled placeholder="--Выберите сотрудника--" value=""><img class="arrow" src="./img/icons/arrow-down-green.svg" alt="">
+                    </div>
+                    <ul class="list">
+                      <li class="group"><span param-value="param-1">
+                          <p>Евгений Панков</p></span></li>
+                      <li class="group"><span param-value="param-2">
+                          <p>Антон Кравченко</p></span></li>
+                      <li class="group"><span param-value="param-3">
+                          <p>Евгений Дранишников</p></span></li>
+                      <li class="group"><span param-value="param-4">
+                          <p>Александр Талалаев</p></span></li>
+                      <li class="group"><span param-value="param-5">
+                          <p>Евгений Бондарь</p></span></li>
+                    </ul>
+                    <input class="hiddeninput" type="hidden" name="part-form_broker" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-moderation-date">Дата создания</label>
+                  <input class="small" id="part-moderation-date" name="part-moderation-date" type="date" value="">
+                </div>
+                <div class="group">
+                  <label for="part-moderation-hidepayback">Скрыть окупаемость?</label>
+                  <div class="switch-btn" id="part-moderation-hidepayback">
+                    <p class="switch-btn-notes true">Да</p>
+                    <p class="switch-btn-notes false">Нет</p>
+                    <input class="hiddeninput" type="hidden" name="part-moderation-hidepayback" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="inputs right">
+                <div class="group">
+                  <label>Последняя дата изменения</label>
+                  <p class="insteadinput">15.02.2018</p>
+                </div>
+                <div class="group">
+                  <label>Кем создано</label>
+                  <p class="insteadinput">Какой-то брокер</p>
+                </div>
+                <div class="group">
+                  <label>Кем изменено</label>
+                  <p class="insteadinput">Какой-то брокер</p>
+                </div>
+              </div>
+              <div class="inputs fullwidth">
+                <div class="group">
+                  <label>Значки-преимущества</label>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelproverenno" type="checkbox" name="part-moderation-labelproverenno">
+                    <label for="part-moderation-labelproverenno"> <img src="./img/icons/label_proverenno(black).svg">
+                      <p>Объект прошёл полную проверку</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelvysokayapribyl" type="checkbox" name="part-moderation-labelvysokayapribyl">
+                    <label for="part-moderation-labelvysokayapribyl"> <img src="./img/icons/label_visokaya-pribyl(black).svg">
+                      <p>Высокая прибыль</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelnizkayastoimost" type="checkbox" name="part-moderation-labelnizkayastoimost">
+                    <label for="part-moderation-labelnizkayastoimost"><img src="./img/icons/label_nizkaya-stoimost(black).svg">
+                      <p>Низкая стоимость</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelokupaemost" type="checkbox" name="part-moderation-labelokupaemost">
+                    <label for="part-moderation-labelokupaemost"> <img src="./img/icons/label_okupaemost(black).svg">
+                      <p>Быстрая окупаемость</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelprodazha" type="checkbox" name="part-moderation-labelprodazha">
+                    <label for="part-moderation-labelprodazha"> <img src="./img/icons/label_prodazha(black).svg">
+                      <p>Создан специально на продажу</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelnizkayaarenda" type="checkbox" name="part-moderation-labelnizkayaarenda">
+                    <label for="part-moderation-labelnizkayaarenda"> <img src="./img/icons/label_nizkaya-arenda(black).svg">
+                      <p>Низкая аренда</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labellicenziya" type="checkbox" name="part-moderation-labellicenziya">
+                    <label for="part-moderation-labellicenziya"><img src="./img/icons/label_license(black).svg">
+                      <p>Получена лицензия</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelklassifikaciya" type="checkbox" name="part-moderation-labelklassifikaciya">
+                    <label for="part-moderation-labelklassifikaciya"><img src="./img/icons/label_classification(black).svg">
+                      <p>Получена классификация</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelrazreshenie" type="checkbox" name="part-moderation-labelrazreshenie">
+                    <label for="part-moderation-labelrazreshenie"><img src="./img/icons/label_razreshenie(black).svg">
+                      <p>Получено разрешение</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelfranshiza" type="checkbox" name="part-moderation-labelfranshiza">
+                    <label for="part-moderation-labelfranshiza"> <img src="./img/icons/label_franchise(black).svg">
+                      <p>Объект по франшизе</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelraspolozhenie" type="checkbox" name="part-moderation-labelraspolozhenie">
+                    <label for="part-moderation-labelraspolozhenie"> <img src="./img/icons/label_raspolozhenie(black).svg">
+                      <p>Отличное расположение</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelsobstvennost" type="checkbox" name="part-moderation-labelsobstvennost">
+                    <label for="part-moderation-labelsobstvennost"><img src="./img/icons/label_sobstvennost(black).svg">
+                      <p>Помещение в собственность</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelreklama" type="checkbox" name="part-moderation-labelreklama">
+                    <label for="part-moderation-labelreklama"> <img src="./img/icons/label_reklama(black).svg">
+                      <p>Настроенная реклама</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labeloborudovanie" type="checkbox" name="part-moderation-labeloborudovanie">
+                    <label for="part-moderation-labeloborudovanie"><img src="./img/icons/label_oborudovanie(black).svg">
+                      <p>Дорогое оборудование</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelvozrast" type="checkbox" name="part-moderation-labelvozrast">
+                    <label for="part-moderation-labelvozrast"><img src="./img/icons/label_vozrast(black).svg">
+                      <p>Доверительный возраст</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelpomeshenie" type="checkbox" name="part-moderation-labelpomeshenie">
+                    <label for="part-moderation-labelpomeshenie"><img src="./img/icons/label_pomeshenie(black).svg">
+                      <p>Просторное помещение</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labeldolgosrochniy" type="checkbox" name="part-moderation-labeldolgosrochniy">
+                    <label for="part-moderation-labeldolgosrochniy"><img src="./img/icons/label_dolgosrochniy(black).svg">
+                      <p>Долгосрочный договор аренды</p>
+                    </label>
+                  </div>
+                  <div class="checkbox oneffect double">
+                    <input id="part-moderation-labelreputaciya" type="checkbox" name="part-moderation-labelreputaciya">
+                    <label for="part-moderation-labelreputaciya"><img src="./img/icons/label_reputation(black).svg">
+                      <p>Высокая репутация</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-moderation-textblock">Комментарий для сотрудников</label>
+                  <textarea id="part-moderation-textblock" name="part-moderation-textblock" cols="30" rows="10" maxlength="10000"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="part part-owner" id="part-1">
+              <div class="header">
+                <h2>Информация о владельце</h2>
+              </div>
+              <div class="inputs">
+                <div class="group">
+                  <label for="part-owner-name">Имя<span>*</span></label>
+                  <p class="error required">Необходимо заполнить имя</p>
+                  <input class="required" id="part-owner-name" name="part-owner-name" type="text">
+                </div>
+                <div class="group">
+                  <label for="part-owner-phone1">Телефон<span>*</span></label>
+                  <p class="error inside">Брокер Евгений Панков забронировал объект <a href="" target='_blank'>id7643</a> с номером телефона 8 (981) 123-45-67</p>
+                  <p class="error required">Необходимо заполнить хотя бы 1 номер телефона</p>
+                  <input class="phoneinput required" id="part-owner-phone1" name="part-owner-phone1" type="text">
+                  <input class="phoneinput" id="part-owner-phone2" name="part-owner-phone2" type="text">
+                  <input class="phoneinput" id="part-owner-phone3" name="part-owner-phone3" type="text">
+                  <input class="phoneinput" id="part-owner-phone4" name="part-owner-phone4" type="text">
+                  <input class="phoneinput" id="part-owner-phone5" name="part-owner-phone5" type="text"><a class="addbutton" id="part-owner-phone_addbutton">+ добавить поле</a>
+                </div>
+                <div class="group">
+                  <label for="part-owner-email">Почта</label>
+                  <input id="part-owner-email" name="part-owner-email" type="text">
+                </div>
+              </div>
+              <div class="notes"><i>Эта информация не отображается в объявлениях.</i><i>Мы не разглашаем имена, телефоны и почтовые адреса наших клиентов.</i><i>Если Вашим объявлением кто-либо заинтересуется, то Вы получите уведомление на телефон и почту.</i></div>
+            </div>
+            <div class="part part-general" id="part-2">
+              <div class="header">
+                <h2>Основная информация</h2>
+              </div>
+              <div class="inputs">
+                <div class="group">
+                  <label for="part-general-name">Название или бренд объекта</label><i>Не отображается на сайте</i>
+                  <input id="part-general-name" name="part-general-name" type="text">
+                </div>
+                <div class="group">
+                  <label for="part-general-legalform">Организационно-правовая форма</label>
+                  <div class="select-imitator select-imitator_simplify" id="part-general-legalform">
+                    <div class="input-container" id="part-general-legalform_container">
+                      <input type="text" disabled placeholder="--Выберите ответ--" value=""><img class="arrow" src="./img/icons/arrow-down-green.svg" alt="">
+                    </div>
+                    <ul class="list">
+                      <li class="group"><span param-value="param-1">
+                          <p>Физическое лицо</p></span></li>
+                      <li class="group"><span param-value="param-2">
+                          <p>ИП</p></span></li>
+                      <li class="group"><span param-value="param-3">
+                          <p>ООО</p></span></li>
+                      <li class="group"><span param-value="param-4">
+                          <p>ОДО</p></span></li>
+                      <li class="group"><span param-value="param-5">
+                          <p>ОАО</p></span></li>
+                      <li class="group"><span param-value="param-6">
+                          <p>ЗАО</p></span></li>
+                      <li class="group"><span param-value="param-7">
+                          <p>Товарищество</p></span></li>
+                      <li class="group"><span param-value="param-8">
+                          <p>Кооператив</p></span></li>
+                    </ul>
+                    <input class="hiddeninput" type="hidden" name="part-form_legalform" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-general-taxication">Система налогооблажения</label>
+                  <div class="select-imitator select-imitator_simplify" id="part-general-taxication">
+                    <div class="input-container" id="part-general-taxication_container">
+                      <input type="text" disabled placeholder="--Выберите ответ--" value=""><img class="arrow" src="./img/icons/arrow-down-green.svg" alt="">
+                    </div>
+                    <ul class="list">
+                      <li class="group"><span param-value="param-1">
+                          <p>ОСНО</p></span></li>
+                      <li class="group"><span param-value="param-2">
+                          <p>УСН</p></span></li>
+                      <li class="group"><span param-value="param-3">
+                          <p>ЕНВД</p></span></li>
+                      <li class="group"><span param-value="param-4">
+                          <p>ЕСХН</p></span></li>
+                      <li class="group"><span param-value="param-5">
+                          <p>Патентная</p></span></li>
+                    </ul>
+                    <input class="hiddeninput" type="hidden" name="part-form_taxication" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-general-franchise">Объект по франшизе?</label>
+                  <div class="switch-btn" id="part-general-franchise">
+                    <p class="switch-btn-notes true">Да</p>
+                    <p class="switch-btn-notes false">Нет</p>
+                    <input class="hiddeninput" type="hidden" name="part-general-franchise" value="">
+                  </div>
+                </div>
+                <div class="group"><!-- Важно! у каждого типа должен быть атрибут parent, зависящий от категории типа: hotel - гостиничный бизнес, obshepit - общепит, beautihealth - красота и здоровье, production - производство, trading - торговля, auto - автобизнес, fun - развлечения, service - услуги  -->
+                  <label for="part-general-category">Категория и тип<span>*</span></label><i>Можно выбрать несколько</i>
+                  <p class="error required">Необходимо выбрать категорию и тип</p>
+                  <div class="select-imitator select-imitator_multiply" id="part-general-category">
+                    <div class="input-container" id="part-general-category_container">
+                      <input type="text" disabled placeholder="--Выберите категорию и тип--" value=""><img class="arrow" src="./img/icons/arrow-down-green.svg" alt="">
+                    </div>
+                    <ul class="list">
+                      <li class="group">
+                        <div class="inactive">
+                          <p>Гостиничный бизнес</p>
+                        </div><span param-value="param-1-1" parent="hotel"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Отели</p></span><span param-value="param-1-2" parent="hotel"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Хостелы</p></span>
+                      </li>
+                      <li class="group">
+                        <div class="inactive">
+                          <p>Общепит</p>
+                        </div><span param-value="param-2-1" parent="obshepit"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Кафе</p></span><span param-value="param-2-2" parent="obshepit"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Рестораны</p></span><span param-value="param-2-3" parent="obshepit"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Забегаловки</p></span><span param-value="param-2-4" parent="obshepit"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Суперзащибические штуки</p></span>
+                      </li>
+                      <li class="group">
+                        <div class="inactive">
+                          <p>Красота и здоровье</p>
+                        </div><span param-value="param-3-1" parent="beautyhealth"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Салоны красоты</p></span><span param-value="param-4-2" parent="beautyhealth"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Студии маникюра</p></span><span param-value="param-5-3" parent="beautyhealth"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Клиники</p></span><span param-value="param-6-4" parent="beautyhealth"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <p>Зубные</p></span>
+                      </li>
+                    </ul>
+                    <input class="hiddeninput required" type="hidden" name="part-form_category" value="">
+                  </div>
+                </div>
+                <div class="group" id="onhide-license">
+                  <label for="part-general-license">Наличие лицензии</label>
+                  <div class="radio-imitator" id="part-general-license">
+                    <div class="list"><a param-value="param-1">не требуется</a><a param-value="param-2">нет</a><a param-value="param-3">есть</a></div>
+                    <input class="hiddeninput" type="hidden" name="part-form_license" value="">
+                  </div>
+                </div>
+                <div class="group" id="onhide-resolution">
+                  <label for="part-general-resolution">Наличие разрешения</label>
+                  <div class="radio-imitator" id="part-general-resolution">
+                    <div class="list"><a param-value="param-1">не требуется</a><a param-value="param-2">нет</a><a param-value="param-3">есть</a></div>
+                    <input class="hiddeninput" type="hidden" name="part-form_resolution" value="">
+                  </div>
+                </div>
+                <div class="group" id="onhide-classification">
+                  <label for="part-general-classification">Классификация</label>
+                  <div class="select-imitator select-imitator_simplify" id="part-general-classification">
+                    <div class="input-container" id="part-general-classification_container">
+                      <input type="text" disabled placeholder="--Выберите ответ--" value=""><img class="arrow" src="./img/icons/arrow-down-green.svg" alt="">
+                    </div>
+                    <ul class="list">
+                      <li class="group"><span param-value="param-1">
+                          <p>Нет</p></span></li>
+                      <li class="group"><span param-value="param-2">
+                          <p>"Без звёзд"</p></span></li>
+                      <li class="group"><span param-value="param-3">
+                          <p>"1 звёзда"</p></span></li>
+                      <li class="group"><span param-value="param-4">
+                          <p>"2 звёзды"</p></span></li>
+                      <li class="group"><span param-value="param-5">
+                          <p>"3 звёзды"</p></span></li>
+                      <li class="group"><span param-value="param-6">
+                          <p>"4 звёзды"</p></span></li>
+                      <li class="group"><span param-value="param-7">
+                          <p>"5 звёзд"</p></span></li>
+                    </ul>
+                    <input class="hiddeninput" type="hidden" name="part-form_classification" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-general-age">Возраст</label><i>Если возраст меньше года, укажите 0</i>
+                  <input class="supersmall" id="part-general-name" name="part-general-age" type="number">
+                  <p class="tail">лет</p>
+                </div>
+              </div>
+              <div class="inputs right">
+                <div class="group">
+                  <label for="part-general-cost">Стоимость<span>*</span></label><i>Комиссия от 2 до 10%, минимум 100 000 руб.</i>
+                  <p class="error required">Необходимо написать стоимость</p>
+                  <input class="numberinput required" id="part-general-cost" name="part-general-cost" type="text" value="" maxlength="20">
+                </div>
+                <div class="group">
+                  <label for="part-general-costquestion">Включить комиссию в эту стоимость?</label>
+                  <div class="switch-btn" id="part-general-costquestion">
+                    <p class="switch-btn-notes true">Да</p>
+                    <p class="switch-btn-notes false">Нет</p>
+                    <input class="hiddeninput" type="hidden" name="part-form_costquestion" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <p class="insteadinput">Стоимость получаемая: <i class="part-general-ownercost_show">0</i> руб.</p>
+                  <p class="insteadinput">Стоимость с комиссией: <i class="part-general-finalcost_show">0</i> руб.</p>
+                  <input class="hiddeninput" id="part-general-finalcost_input" type="hidden" name="part-general-finalcost" value="">
+                  <input class="hiddeninput" id="part-general-ownercost_input" type="hidden" name="part-general-ownercost" value="">
+                </div>
+              </div>
+              <div class="inputs fullwidth">
+                <div class="group">
+                  <label for="part-general-title">Заголовок объявления<span>*</span></label><i>Не указывайте название или бренд</i><i>Пример: "Кафе со вкусной выпечкой у метро"</i>
+                  <p class="error required">Необходимо написать заголовок объявления</p>
+                  <p class="error domains">При указании сайта, не пишите доменные зоны .ru, .com и прочие. Многие рекламные площадки это запрещают и объявление не сможет быть показано на них.</p>
+                  <input class="symbols-input required nodomains" id="part-general-title" name="part-general-title" type="text" maxlength="50">
+                  <div class="symbols deny">
+                    <p class="current">0</p>
+                    <p>/</p>
+                    <p class="all">50</p>
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-general-textblock">Краткое описание объекта</label><i>Это самое начало объявления - его вводная часть. Напишите здесь главные преимущества своего бизнеса.</i><i>На других рекламных площадках из-за ограничений текст сократится до 300 символов. На нашем сайте будет полная версия.</i>
+                  <p class="error domains">При указании сайта, не пишите доменные зоны .ru, .com и прочие. Многие рекламные площадки это запрещают и объявление не сможет быть показано на них.</p>
+                  <textarea class="symbols-input nodomains" id="part-general-textblock" name="part-general-textblock" cols="30" rows="10" maxlength="10000"></textarea>
+                  <div class="symbols ally">
+                    <p class="current">0</p>
+                    <p>/</p>
+                    <p class="all">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="part part-location" id="part-3">
+              <div class="header">
+                <h2>Помещение и расположение</h2>
+              </div>
+              <div class="inputs">
+                <div class="group">
+                  <label for="part-location-address">Адрес<span>*</span></label>
+                  <p class="error required">Необходимо заполнить адрес</p>
+                  <input class="required" id="part-location-address" name="part-location-address" type="text">
+                </div>
+                <div class="group">
+                  <label for="part-location-metro">Ближайшая станция метро<span>*</span></label><i>Можно выбрать несколько</i>
+                  <p class="error required">Необходимо выбрать метро</p>
+                  <div class="select-imitator select-imitator_multiply" id="metro-select-imitator">
+                    <div class="input-container" id="metro-select-imitator_container">
+                      <input type="text" disabled placeholder="--Выберите станцию--" value=""><img class="arrow" src="./img/icons/arrow-down-green.svg" alt="">
+                    </div>
+                    <ul class="list">
+                      <li class="group">
+                        <div class="inactive">
+                          <div class="circle red"></div>
+                          <p>Шикарная ветка</p>
+                        </div><span param-value="param-1-1"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle red"></div>
+                          <p>Автово</p></span><span param-value="param-1-2"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle red"></div>
+                          <p>Академическая</p></span><span param-value="param-1-3"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle red"></div>
+                          <p>Балтийская</p></span>
+                      </li>
+                      <li class="group">
+                        <div class="inactive">
+                          <div class="circle purple"></div>
+                          <p>Веселая ветка</p>
+                        </div><span param-value="param-2-1"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle purple"></div>
+                          <p>Парнас</p></span><span param-value="param-2-2"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle purple"></div>
+                          <p>Садовая</p></span><span param-value="param-2-3"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle purple"></div>
+                          <p>Сенная</p></span><span param-value="param-2-4"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle purple"></div>
+                          <p>Спасская</p></span>
+                      </li>
+                      <li class="group">
+                        <div class="inactive">
+                          <div class="circle green"></div>
+                          <p>Умопомрачительная ветка</p>
+                        </div><span param-value="param-3-1"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle green"></div>
+                          <p>Парнас</p></span><span param-value="param-3-2"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle green"></div>
+                          <p>Садовая</p></span><span param-value="param-3-3"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle green"></div>
+                          <p>Сенная</p></span><span param-value="param-3-4"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle green"></div>
+                          <p>Спасская</p></span>
+                      </li>
+                      <li class="group">
+                        <div class="inactive">
+                          <div class="circle blue"></div>
+                          <p>Невероятная ветка прямо как Халк </p>
+                        </div><span param-value="param-4-1"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle blue"></div>
+                          <p>Парнас</p></span><span param-value="param-4-2"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle blue"></div>
+                          <p>Садовая</p></span><span param-value="param-4-3"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle blue"></div>
+                          <p>Сенная</p></span><span param-value="param-4-4"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle blue"></div>
+                          <p>Спасская</p></span>
+                      </li>
+                      <li class="group">
+                        <div class="inactive">
+                          <div class="circle orange"></div>
+                          <p>Ветка пелеменей (не спрашивай почему)</p>
+                        </div><span param-value="param-5-1"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle orange"></div>
+                          <p>Парнас</p></span><span param-value="param-5-2"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle orange"></div>
+                          <p>Садовая</p></span><span param-value="param-5-3"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle orange"></div>
+                          <p>Сенная</p></span><span param-value="param-5-4"><img class="check" src="./img/icons/check.svg" alt="check">
+                          <div class="circle orange"></div>
+                          <p>Спасская </p></span>
+                      </li>
+                    </ul>
+                    <input class="hiddeninput required" type="hidden" name="catalog-search-form_metro" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-location-buildingtype">Тип здания<span>*</span></label>
+                  <p class="error required">Необходимо выбрать тип здания</p>
+                  <div class="select-imitator select-imitator_simplify" id="part-location-buildingtype">
+                    <div class="input-container" id="part-location-buildingtype_container">
+                      <input type="text" disabled placeholder="--Выберите тип здания--" value=""><img class="arrow" src="./img/icons/arrow-down-green.svg" alt="">
+                    </div>
+                    <ul class="list">
+                      <li class="group"><span param-value="param-1">
+                          <p>Бизнес-центр</p></span></li>
+                      <li class="group"><span param-value="param-2">
+                          <p>Торговый центр</p></span></li>
+                      <li class="group"><span param-value="param-3">
+                          <p>Отдельное здание</p></span></li>
+                      <li class="group"><span param-value="param-4">
+                          <p>Встроенное помещение</p></span></li>
+                      <li class="group"><span param-value="param-5">
+                          <p>Склад</p></span></li>
+                      <li class="group"><span param-value="param-6">
+                          <p>Производство</p></span></li>
+                    </ul>
+                    <input class="hiddeninput required" type="hidden" name="part-form_location-buildingtype" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-location-fund">Фонд помещения<span>*</span></label>
+                  <p class="error required">Необходимо выбрать фонд помещения</p>
+                  <div class="select-imitator select-imitator_simplify" id="part-location-fund">
+                    <div class="input-container" id="part-location-fund_container">
+                      <input type="text" disabled placeholder="--Выберите фонд--" value=""><img class="arrow" src="./img/icons/arrow-down-green.svg" alt="">
+                    </div>
+                    <ul class="list">
+                      <li class="group"><span param-value="param-1">
+                          <p>Жилой</p></span></li>
+                      <li class="group"><span param-value="param-2">
+                          <p>Жилой с возможностью перевода</p></span></li>
+                      <li class="group"><span param-value="param-3">
+                          <p>Нежилой</p></span></li>
+                    </ul>
+                    <input class="hiddeninput required" type="hidden" name="part-form_location-fund" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-location-flor-current">Этаж<span>*</span></label>
+                  <p class="error required">Необходимо заполнить этаж и этажность</p><i>Этаж вашего бизнеса и общее количество этажей в здании</i><i>Если этаж цокольный, введите -1</i>
+                  <input class="supersmall required" id="part-location-flor-current" name="part-location-flor-current" type="text">
+                  <p class="tail">из</p>
+                  <input class="supersmall required" id="part-location-flor-all" name="part-location-flor-all" type="number">
+                </div>
+                <div class="group">
+                  <label for="part-location-enter">Вход в помещение<span>*</span></label>
+                  <div class="radio-imitator" id="part-location-enter">
+                    <div class="list"><a param-value="param-1">общий</a><a param-value="param-2">отдельный</a></div>
+                    <input class="hiddeninput required" type="hidden" name="part-form_location-enter" value="">
+                  </div>
+                </div>
+                <div class="group">
+                  <label for="part-location-quadrature">Квадратура помещения<span>*</span></label>
+                  <p class="error required">Необходимо заполнить квадратуру помещения</p>
+                  <input class="supersmall required" id="part-location-quadrature" name="part-location-quadrature-current" type="number" value="" min="0">
+                  <p class="tail">м<sup>2</sup></p>
+                </div>
+              </div>
+              <div class="inputs right">
+                <div class="group">
+                  <label for="part-location-own">Тип владения помещением<span>*</span></label>
+                  <div class="radio-imitator" id="part-location-own">
+                    <div class="list"><a param-value="param-1">в аренду</a><a param-value="param-2">в собственность</a></div>
+                    <input class="hiddeninput required" type="hidden" name="part-form_location-own" value="">
+                    <div class="onhideparam" style="display:none;" param-value="param-2">--прописать в атрибут param-value значение "в собственность"--</div>
+                  </div>
+                </div>
+                <div id="onhide-block-own">
+                  <div class="group" id="onhide-rent">
+                    <label for="part-location-rent">Договор аренды</label>
+                    <div class="radio-imitator" id="part-location-rent">
+                      <div class="list"><a param-value="param-1">краткосрочный</a><a param-value="param-2">долгосрочный</a></div>
+                      <input class="hiddeninput" type="hidden" name="part-form_location-rent" value="">
+                      <div class="onhideparam" style="display:none;" param-value="param-2">--прописать в атрибут param-value значение "долгосрочного"--</div>
+                    </div>
+                  </div>
+                  <div class="group" id="onhide-prolongation">
+                    <label for="part-location-prolongation">С пролонгацией?</label>
+                    <div class="switch-btn" id="part-location-prolongation">
+                      <p class="switch-btn-notes true">Да</p>
+                      <p class="switch-btn-notes false">Нет</p>
+                      <input class="hiddeninput" type="hidden" name="part-location-prolongation" value="">
+                    </div>
+                  </div>
+                  <div class="group" id="onhide-leaseterm">
+                    <label for="part-location-leaseterm">Срок договора аренды</label>
+                    <input class="supersmall" id="part-location-leaseterm" name="part-location-leaseterm" type="number" min="0">
+                    <p class="tail">лет</p>
+                  </div>
+                  <div class="group" id="onhide-rentcost">
+                    <label for="part-location-rentcost">Арендная плата</label><i>Можно указать что-то одно</i>
+                    <label for="part-location-rentcostaverage">в среднем</label>
+                    <input class="numberinput small" id="part-location-rentcostaverage" name="part-location-rentcostaverage" type="text" maxlength="20">
+                    <p class="tail">руб./мес.</p><br>
+                    <label for="part-location-rentcostfrom">от</label>
+                    <input class="numberinput small" id="part-location-rentcostfrom" name="part-location-rentcostfrom" type="text" maxlength="20">
+                    <p class="tail">руб./мес.</p><br>
+                    <label for="part-location-rentcostto">до</label>
+                    <input class="numberinput small" id="part-location-rentcostto" name="part-location-rentcostto" type="text" maxlength="20">
+                    <p class="tail">руб./мес.</p>
+                  </div>
+                  <div class="group" id="onhide-communalincuded">
+                    <label for="part-location-communalincuded">Коммунальные услуги включены в арендную плату?</label>
+                    <div class="switch-btn" id="part-location-communalincuded">
+                      <p class="switch-btn-notes true">Да</p>
+                      <p class="switch-btn-notes false">Нет</p>
+                      <input class="hiddeninput" type="hidden" name="part-location-communalincuded" value="">
+                    </div>
+                  </div>
+                </div>
+                <div class="group" id="onhide-communalcost">
+                  <label for="part-location-communalcost">Стоимость коммунальных услуг</label><i>Можно указать что-то одно</i>
+                  <label for="part-location-communalcostaverage">в среднем</label>
+                  <input class="numberinput small" id="part-location-communalcostaverage" name="part-location-communalcostaverage" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p><br>
+                  <label for="part-location-communalcostfrom">от</label>
+                  <input class="numberinput small" id="part-location-communalcostfrom" name="part-location-communalcostfrom" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p><br>
+                  <label for="part-location-communalcostto">до</label>
+                  <input class="numberinput small" id="part-location-communalcostto" name="part-location-communalcostto" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                </div>
+              </div>
+              <div class="inputs fullwidth"> 
+                <div class="group">
+                  <label for="part-location-textblock">Что еще можно рассказать про помещение и расположение?</label><i>Этот текст будет внизу блока "Помещение и расположение" после вышеперечисленных параметров.</i><i>На других рекламных площадках из-за ограничений текст сократится до 300 символов. На нашем сайте будет полная версия.</i>
+                  <p class="error domains">При указании сайта, не пишите доменные зоны .ru, .com и прочие. Многие рекламные площадки это запрещают и объявление не сможет быть показано на них.</p>
+                  <textarea class="symbols-input nodomains" id="part-location-textblock" name="part-location-textblock" cols="30" rows="10" maxlength="10000"></textarea>
+                  <div class="symbols ally">
+                    <p class="current">0</p>
+                    <p>/</p>
+                    <p class="all">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="part part-equipment" id="part-4">
+              <div class="header">
+                <h2>Оборудование</h2>
+              </div>
+              <div class="inputs fullwidth">
+                <div class="group">
+                  <label for="part-equipment-textblock">Опишите оборудование Вашего бизнеса</label><i>Количество, качество, передается ли новому владельцу.</i><i>На других рекламных площадках из-за ограничений текст сократится до 300 символов. На нашем сайте будет полная версия.</i>
+                  <p class="error domains">При указании сайта, не пишите доменные зоны .ru, .com и прочие. Многие рекламные площадки это запрещают и объявление не сможет быть показано на них.</p>
+                  <textarea class="symbols-input nodomains" id="part-equipment-textblock" name="part-equipment-textblock" cols="30" rows="10" maxlength="10000"></textarea>
+                  <div class="symbols ally">
+                    <p class="current">0</p>
+                    <p>/</p>
+                    <p class="all">300</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="part part-staff" id="part-5">
+              <div class="header">
+                <h2>Персонал</h2>
+              </div>
+              <div class="inputs">
+                <div class="group">
+                  <label for="part-staff-salary">Фонд оплаты труда (весь персонал)</label>
+                  <input class="numberinput small" id="part-staff-salary" name="part-staff-salary" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                </div>
+                <div class="group">
+                  <label for="part-staff-persons">Количество человек</label>
+                  <input class="supersmall" id="part-staff-persons" name="part-staff-persons" type="number" maxlength="20" min="0">
+                </div>
+              </div>
+              <div class="inputs fullwidth">
+                <div class="group">
+                  <label for="part-staff-textblock">Что ещё можно рассказать о персонале?</label><i>На других рекламных площадках из-за ограничений текст сократится до 300 символов. На нашем сайте будет полная версия.</i>
+                  <p class="error domains">При указании сайта, не пишите доменные зоны .ru, .com и прочие. Многие рекламные площадки это запрещают и объявление не сможет быть показано на них.</p>
+                  <textarea class="symbols-input nodomains" id="part-staff-textblock" name="part-staff-textblock" cols="30" rows="10" maxlength="10000"></textarea>
+                  <div class="symbols ally">
+                    <p class="current">0</p>
+                    <p>/</p>
+                    <p class="all">200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="part part-advertise" id="part-6">
+              <div class="header">
+                <h2>Реклама</h2>
+              </div>
+              <div class="inputs">
+                <div class="group">
+                  <label for="part-advertise-cost">Затраты на рекламу</label>
+                  <input class="numberinput small" id="part-advertise-cost" name="part-advertise-cost" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                </div>
+              </div>
+              <div class="inputs fullwidth">
+                <div class="group">
+                  <label for="part-advertise-textblock">Что ещё можно рассказать о рекламе?</label><i>Есть ли сайт, страницы в соц.сетях, аккаунты на специализированных площадках, акаунты на картах, вывеска, рекламные кампании?</i><i>На других рекламных площадках из-за ограничений текст сократится до 300 символов. На нашем сайте будет полная версия.</i>
+                  <p class="error domains">При указании сайта, не пишите доменные зоны .ru, .com и прочие. Многие рекламные площадки это запрещают и объявление не сможет быть показано на них.</p>
+                  <textarea class="symbols-input nodomains" id="part-advertise-textblock" name="part-advertise-textblock" cols="30" rows="10" maxlength="10000"></textarea>
+                  <div class="symbols ally">
+                    <p class="current">0</p>
+                    <p>/</p>
+                    <p class="all">200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="part part-finance" id="part-7">
+              <div class="header">
+                <h2>Финансы</h2>
+              </div>
+              <div class="inputs">
+                <div class="group">
+                  <label for="part-finance-turnover">Оборот</label><i>Все получаемые средства, включая расходы</i><i>Можно указать что-то одно</i>
+                  <label for="part-finance-turnoveraverage">В среднем</label>
+                  <input class="numberinput small" id="part-finance-turnoveraverage" name="part-advertise-turnoveraverage" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                  <label for="part-finance-turnoverfrom">От</label>
+                  <input class="numberinput small" id="part-finance-turnoverfrom" name="part-advertise-turnoverfrom" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                  <label for="part-finance-turnoverto">До</label>
+                  <input class="numberinput small" id="part-finance-turnoverto" name="part-advertise-turnoverto" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                </div>
+              </div>
+              <div class="inputs right">
+                <div class="group">
+                  <label for="part-finance-profit">Прибыль</label><i>Чистая прибыль после всех расходов</i><i>Можно указать что-то одно</i>
+                  <label for="part-finance-profitaverage">В среднем</label>
+                  <input class="numberinput small" id="part-finance-profitaverage" name="part-advertise-profitaverage" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                  <label for="part-finance-profitfrom">От</label>
+                  <input class="numberinput small" id="part-finance-profitfrom" name="part-advertise-profitfrom" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                  <label for="part-finance-profitto">До</label>
+                  <input class="numberinput small" id="part-finance-profitto" name="part-advertise-profitto" type="text" maxlength="20">
+                  <p class="tail">руб./мес.</p>
+                </div>
+              </div>
+              <div class="inputs fullwidth">
+                <div class="group">
+                  <label for="part-finance-textblock">Что ещё можно рассказать о финансах?</label><i>Какие системы учета используете? Как подтверждается прибыль? За счёт чего такая прибыль? Каков диапазон цен и средний чек гостя? Есть ли поставщики?</i><i>На других рекламных площадках из-за ограничений текст сократится до 300 символов. На нашем сайте будет полная версия.</i>
+                  <p class="error domains">При указании сайта, не пишите доменные зоны .ru, .com и прочие. Многие рекламные площадки это запрещают и объявление не сможет быть показано на них.</p>
+                  <textarea class="symbols-input nodomains" id="part-finance-textblock" name="part-finance-textblock" cols="30" rows="10" maxlength="10000"></textarea>
+                  <div class="symbols ally">
+                    <p class="current">0</p>
+                    <p>/</p>
+                    <p class="all">200</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="part part-photo" id="part-8">
+              <div class="header">
+                <h2>Фотографии</h2>
+              </div>
+              <div class="inputs fullwith"></div>
+            </div>
+            <div class="part part-other" id="part-9">
+              <div class="header">
+                <h2>Дополнительно</h2>
+              </div>
+              <div class="inputs">
+                <div class="group">
+                  <label for="part-other-otheradv">Показывать на других площадках?</label><i>Не рекомендуем снимать активность. Количество обращений сократится более чем в 2 раза.</i>
+                  <div class="switch-btn" id="part-other-otheradv">
+                    <p class="switch-btn-notes true">Да</p>
+                    <p class="switch-btn-notes false">Нет</p>
+                    <input class="hiddeninput" type="hidden" name="part-other-otheradv" value="true">
+                  </div>
+                </div>
+              </div>
+              <div class="inputs fullwidth">
+                <div class="group">
+                  <label>Проверьте свое объявление</label>
+                  <div class="checktextarea">
+                    <div class="textblock render-general-textblock">
+                      <p></p>
+                    </div>
+                    <div class="render_location-block">
+                      <h2>Помещение и расположение</h2>
+                      <p class="render_own"><b>Помещение:</b> в собственность</p>
+                      <p class="render_buildingtype"><b>Тип здания:</b> бизнес-центр</p>
+                      <p class="render_fund"><b>Фонд помещения:</b> нежилой</p>
+                      <p class="render_flor"><b>Этаж:</b> 1 из 5</p>
+                      <p class="render_enter"><b>Вход:</b> отдельный</p>
+                      <p class="render_quadrature"><b>Квадратура помещения:</b> 123 м<sup>2</sup></p>
+                      <p class="render_rent"><b>Договор аренды:</b> краткосрочный с пролонгацией</p>
+                      <p class="render_rentcost"><b>Арендная плата:</b> 100 000 - 150 000 руб./мес.</p>
+                      <p class="render_communalcost"><b>Коммунальные услуги:</b> 3 000 - 4 000 руб./мес.</p>
+                      <div class="textblock render-location-textblock"></div>
+                    </div>
+                    <div class="render_equipment-block">
+                      <h2>Оборудование</h2>
+                      <div class="textblock render-equipment-textblock"></div>
+                    </div>
+                    <div class="render_staff-block">
+                      <h2>Персонал</h2>
+                      <p class="render_staffsalary"><b>Фонд оплаты труда:</b> 40 000 руб./мес.</p>
+                      <p class="render_staffpersons"><b>Количество человек:</b> 2</p>
+                      <div class="textblock render-staff-textblock"></div>
+                    </div>
+                    <div class="render_advertise-block">   
+                      <h2>Реклама</h2>
+                      <p class="render_advertisecost"><b>Затраты на рекламу:</b> 30 000 руб./мес.</p>
+                      <div class="textblock render-advertise-textblock"></div>
+                    </div>
+                    <div class="render_finance-block">
+                      <h2>Финансы</h2>
+                      <p class="render_rentcost"><b>Арендная плата:</b> 100 000 - 150 000 руб./мес.</p>
+                      <p class="render_communalcost"><b>Коммунальные услуги:</b> 3 000 - 4 000 руб./мес.</p>
+                      <p class="render_staffsalary"><b>Фонд оплаты труда:</b> 40 000 руб./мес.</p>
+                      <p class="render_advertisecost"><b>Затраты на рекламу:</b> 30 000 руб./мес.</p>
+                      <p class="render_turnover"><b>Оборот:</b> 290 000 руб./мес.</p>
+                      <p class="render_profit"><b>Чистая прибыль:</b> 90 000 руб./мес.</p>
+                      <p class="render_payback"><b>Окупаемость:</b> 90 000 руб./мес.</p>
+                      <div class="textblock render-finance-textblock"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="offer-footer"><!-- "Назад" направляет в список объектов, "Добавить" только в добавлении и "Сохранить" только в сохранении объекта --> <a id="quit">Назад</a><a id="add">+ Добавить</a><a id="save">Сохранить</a></div>
+        </div>
+      </div>
+    </section>
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+      <ul class="columns" itemscope itemtype="http://schema.org/Organization">
+        <li class="simple" itemscope itemtype="http://schema.org/SiteNavigationElement">
+          <div><a href="./worker-auth.html" itemprop="url" rel="nofollow">Кабинет брокера</a><a href="./sitemap.html" itemprop="url">Карта сайта</a><a href="./terms-of-use.html" itemprop="url">Пользовательское соглашение</a></div>
+        </li>
+        <li class="information">
+          <div class="social"><a href="https://vk.com/vbiznese" target="_blank" itemprop="sameAs"> <img src="img/icons/social-vk.svg" alt="vbiznese во Вконтакте"></a><a href="https://www.facebook.com/goodwillbro/" target="_blank" itemprop="sameAs"> <img src="img/icons/social-fb.svg" alt="vbiznese в Facebook"></a><a href="https://www.instagram.com/vbiznese.ru/" target="_blank" itemprop="sameAs"><img src="img/icons/social-insta.svg" alt="vbiznese в Instagram"></a></div>
+          <meta itemprop="telephone" content="8(812)502-11-99">
+          <address itemscope itemtype="http://schema.org/PostalAddress"><a class="phone" itemprop="telephone" href="tel:88125021199">8 (812) 502-11-99</a><br>
+            <p class="together" itemprop="address">г.Санкт-Петербург,<br>наб.Обводного канала 93А</p>
+            <p> <span itemprop="name">vbiznese.ru </span><span itemprop="copyrightYear">- 2019. </span>Все права защищены.</p>
+          </address>
+        </li>
+        <div class="last">
+          <p>
+            This site is protected by reCAPTCHA and the Google
+            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+          </p>
+        </div>
+      </ul>
+    </footer>
+  </body>
+</html>

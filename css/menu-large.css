@@ -1,0 +1,82 @@
+div#menu-large {
+  position: relative;
+}
+@media (max-width: 850px) {
+  div#menu-large {
+    display: none;
+  }
+}
+div#menu-large nav {
+  text-align: left;
+  padding-top: 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  margin-left: 10%;
+}
+div#menu-large nav div {
+  display: inline-block;
+  margin-right: 70px;
+}
+@media (max-width: 1400px) {
+  div#menu-large nav div {
+    margin-right: 40px;
+  }
+}
+div#menu-large nav div a {
+  cursor: pointer;
+}
+div#menu-large nav div a p {
+  font-family: Trajan;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 14px;
+  opacity: 1;
+}
+div#menu-large nav div a:hover p,
+div#menu-large nav div a:hover img {
+  opacity: 0.8;
+}
+div#menu-large nav div.phone {
+  float: right;
+  margin-left: 0;
+  margin-right: 35px;
+  position: relative;
+  margin-top: -3px;
+}
+div#menu-large nav div.phone a p {
+  font-size: 18px;
+  display: inline-block;
+  padding-left: 25px;
+}
+div#menu-large nav div.phone a img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  top: -3px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  display: inline-block;
+}
+div#menu-large nav div.phone a:hover p,
+div#menu-large nav div.phone a:hover img {
+  opacity: 0.8;
+}
+div#menu-large nav div.action {
+  float: right;
+  margin-right: 10%;
+  margin-left: 0;
+  margin-top: -3px;
+}
+@media (max-width: 1100px) {
+  div#menu-large nav div.action {
+    display: none;
+  }
+}
+div#menu-large nav div.action a p {
+  font-size: 18px;
+}

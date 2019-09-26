@@ -1,0 +1,172 @@
+section#reviews {
+  text-align: left;
+  position: relative;
+  padding-top: 70px;
+}
+@media (max-width: 850px) {
+  section#reviews {
+    padding-top: 130px;
+    padding-bottom: 30px;
+  }
+}
+section#reviews div.headers {
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  section#reviews div.headers {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+section#reviews div.headers * {
+  font-family: Trajan;
+  display: block;
+  width: 100%;
+}
+section#reviews div.headers h1 {
+  font-weight: 200;
+  font-size: 36px;
+  margin-left: -2px;
+}
+section#reviews div.headers h2 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+}
+section#reviews div.review-container,
+section#reviews div.bottom-blocks {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+section#reviews div.review-card-container_show-more {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+}
+@media (max-width: 1200px) {
+  section#reviews div.review-card-container_show-more {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  section#reviews div.review-card-container_show-more {
+    width: 90%;
+  }
+}
+section#reviews div.review-card-container_show-more a {
+  font-family: Trajan;
+  font-size: 14px;
+  display: block;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  background-color: #00662e;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section#reviews div.review-card-container_show-more a:hover {
+  letter-spacing: 1px;
+}
+section#reviews div.review-card-container_show-more img.loading {
+  margin: 0 auto;
+  display: block;
+  height: 55px;
+  width: 55px;
+}
+@media (max-width: 1200px) {
+  section#reviews div.review-card-container_show-more img.loading {
+    height: 55px;
+    width: 55px;
+  }
+}
+section#reviews div.review-card-container_bottom-pagination {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+          box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+  section#reviews div.review-card-container_bottom-pagination {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  section#reviews div.review-card-container_bottom-pagination {
+    padding: 15px;
+    padding-bottom: 55px;
+  }
+}
+section#reviews div.review-card-container_bottom-pagination a,
+section#reviews div.review-card-container_bottom-pagination p {
+  font-family: CalibriLight;
+  font-size: 16px;
+  display: inline-block;
+  padding: 10px;
+  color: #000;
+  background-color: #fff;
+}
+section#reviews div.review-card-container_bottom-pagination p {
+  cursor: default;
+}
+section#reviews div.review-card-container_bottom-pagination a {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+section#reviews div.review-card-container_bottom-pagination a.prev {
+  margin-right: 20px;
+}
+@media (max-width: 500px) {
+  section#reviews div.review-card-container_bottom-pagination a.prev {
+    margin-right: 10px;
+  }
+}
+section#reviews div.review-card-container_bottom-pagination a.next {
+  margin-left: 20px;
+}
+@media (max-width: 500px) {
+  section#reviews div.review-card-container_bottom-pagination a.next {
+    margin-right: 10px;
+  }
+}
+section#reviews div.review-card-container_bottom-pagination a:hover {
+  background-color: #d3d3d3;
+}
+section#reviews div.review-card-container_bottom-pagination a.active {
+  font-weight: 600;
+  color: #00662e;
+}
+@media (max-width: 500px) {
+  section#reviews div.review-card-container_bottom-pagination a.prev {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    margin-left: -100px;
+  }
+  section#reviews div.review-card-container_bottom-pagination a.next {
+    position: absolute;
+    top: 55px;
+    right: 50%;
+    margin-right: -100px;
+  }
+}
